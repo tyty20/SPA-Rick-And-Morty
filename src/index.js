@@ -1,1 +1,5 @@
-console.log('cola')
+import {router} from './router/router'
+
+window.addEventListener('hashchange', () => {
+    router(window.location.hash)
+})
