@@ -1,10 +1,11 @@
 import Home from './home.controller'
-import About from './about.controller.js'
+import About from './about.controller'
+import Character from './character.controller'
 
 const pages = {
     home: Home,
     about: About,
-    characters: 'characters',
+    character: Character,
 }
 
 export {pages}
