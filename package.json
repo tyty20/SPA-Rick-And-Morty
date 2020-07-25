@@ -4,7 +4,7 @@
   "description": "A page of the serie Rick and Morty, where show the characters",
   "main": "index.js",
   "scripts": {
-    "build":"webpack --mode production",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
   },
   "repository": {
@@ -27,7 +27,6 @@
     "@babel/core": "^7.10.5",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.6.0",
-    "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
