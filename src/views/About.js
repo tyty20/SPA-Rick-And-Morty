@@ -1,12 +1,17 @@
-const About = () => {
+import {getPost} from '../utils/getPost'
+
+const About = async () => {
+    const posts = await getPost();
     const view = `
+        
         <div class="About">
+        ${posts.map(post => `
             <div class="about__presentation">
-                <h2>About</h2>
-            </div>
+            <h2>${post.title}</h2>
+             </div>
             <div class="about__text">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae deleniti quisquam ipsam placeat aliquam, voluptates fugit explicabo perferendis facilis quidem earum, temporibus sint, delectus labore similique dignissimos. Consequatur, vel laudantium?</p>
-            </div>
+                <p>${post.body}</p>
+            </div>`).join('')}
         </div>
     `
 

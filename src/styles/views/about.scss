@@ -1,0 +1,19 @@
+body {
+    margin:0px;
+    padding:0px;
+    #content {
+        .About {
+            display:flex;
+            margin:auto;
+            flex-direction: column;
+            text-align: center;
+            .about__presentation {
+                
+            }
+            .about__text {
+    
+            }
+        }
+    }
+    
+}

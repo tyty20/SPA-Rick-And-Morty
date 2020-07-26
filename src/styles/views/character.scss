@@ -1,0 +1,33 @@
+body {
+    padding:0px;
+    margin:0px;
+    #content {
+        .character {
+            background-color: #a4508b;
+            background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+            display:flex;
+            margin:auto;
+            text-align: center;
+            flex-direction: row;
+            padding:90px 0px;
+            flex-wrap: wrap;
+            .character__presentation {
+                margin:auto;
+                img {
+                    width:25em;
+                    border-radius:3px;
+                    border: 3px solid black;   
+                }
+                h2 {
+                    font-size: 2em;
+                }
+            }
+            .character__description {
+                margin:auto;    
+                box-sizing: border-box;
+                font-size: 1.3em;
+            }
+        }
+    }
+    
+}
