@@ -1,7 +1,7 @@
 import {getData} from '../utils/getData'
 import {getUrl} from '../utils/getUrl'
 
-export default async () => {
+const Character = async () => {
     const url = getUrl();
     const id = await url.slice(1).toLocaleLowerCase().split('/')[1] - 1;
     const data = await getData()
@@ -24,3 +24,5 @@ export default async () => {
     `
     return view;
 }
+
+export default character

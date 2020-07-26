@@ -1,4 +1,4 @@
-import {pages} from '../controllers/index'
+import {pages} from '../views/index'
 import {getUrl} from '../utils/getUrl'
 
 const content= document.getElementById('content')
