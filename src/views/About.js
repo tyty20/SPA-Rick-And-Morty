@@ -1,17 +1,19 @@
-import {getPost} from '../utils/getPost'
-
-const About = async () => {
-    const posts = await getPost();
+const About = () => {
     const view = `
         
         <div class="About">
-        ${posts.map(post => `
             <div class="about__presentation">
-            <h2>${post.title}</h2>
-             </div>
+                <figure>
+                    <img src="../media/rickandmorty1.png">
+                    <img src="../media/rickandmorty2.png">
+                    <img src="../media/rickandmorty3.png">
+                    <img src="../media/rickandmorty1.png">
+                    <img src="../media/rickandmorty2.png">
+                </figure>
+            </div>
             <div class="about__text">
-                <p>${post.body}</p>
-            </div>`).join('')}
+                <p></p>
+            </div>
         </div>
     `
 

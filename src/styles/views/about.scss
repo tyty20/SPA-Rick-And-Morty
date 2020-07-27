@@ -1,14 +1,30 @@
+@import  '../animations/carousel';
+
 body {
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
     #content {
         .About {
             display:flex;
-            margin:auto;
-            flex-direction: column;
-            text-align: center;
+            justify-content: center;
+            padding-top: 90px;
             .about__presentation {
+                overflow:hidden;
+                border-radius: 3px;
+                margin:0;
+                padding:0;
                 
+                figure {
+                    position: relative;
+                    width:500%;
+                    animation: 20s slider infinite;
+                    
+                    img {
+                        width:11%;
+                        float:left;
+                        
+                    }
+                }
             }
             .about__text {
     
