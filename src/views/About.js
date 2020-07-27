@@ -90,17 +90,24 @@ const About = () => {
                     </div>
 
                     <div class="about__card">
+                        <div class="about__card--title">
+                            <h2>Family Guy</h2>
+                        </div>
                         <div class="about__card--img">
-                            <img src="#" alt="#">
+                            <img src="../media/familyguy.png" alt="Family Guy">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
                             <span><a href="#">Mas informacion</a></span>
                         </div>
                     </div>
+                
                     <div class="about__card">
+                        <div class="about__card--title">
+                            <h2>The Brak Show </h2>
+                        </div>
                         <div class="about__card--img">
-                            <img src="#" alt ="#">
+                            <img src="../media/thebrakshow.png" alt ="The Brak Show">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -109,8 +116,11 @@ const About = () => {
                     </div>
 
                     <div class="about__card">
+                        <div class="about__card--title">
+                            <h2>Bob's Burgers</h2>
+                        </div>
                         <div class="about__card--img">
-                            <img src="#" alt="#">
+                            <img src="../media/bobburgers.png" alt="Bob's Burgers">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>

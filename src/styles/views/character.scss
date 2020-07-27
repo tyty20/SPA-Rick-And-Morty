@@ -11,6 +11,8 @@ body {
             flex-direction: row;
             padding:90px 0px;
             flex-wrap: wrap;
+            align-items: center;
+            letter-spacing: 3px;
             .character__presentation {
                 margin:auto;
                 img {
@@ -20,12 +22,21 @@ body {
                 }
                 h2 {
                     font-size: 2em;
+                    color:white;
                 }
             }
             .character__description {
-                margin:auto;    
+                margin:auto;   
                 box-sizing: border-box;
+                color:white;
                 font-size: 1.3em;
+                text-align: left;
+                h3 {
+                    font-size: 1.3em;
+                    span {
+                        color:white; 
+                    }
+                }
             }
         }
     }
