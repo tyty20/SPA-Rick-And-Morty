@@ -5,31 +5,176 @@ body {
     padding:0;
     #content {
         .About {
-            display:flex;
-            justify-content: center;
-            padding-top: 90px;
-            .about__presentation {
-                overflow:hidden;
-                border-radius: 3px;
-                margin:0;
-                padding:0;
-                
-                figure {
-                    position: relative;
-                    width:500%;
-                    animation: 20s slider infinite;
+
+            .about__section1 {
+                background-color: #a4508b;
+                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+                display:flex;
+                justify-content: space-around;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                padding:180px 0px;
+                box-sizing: border-box;
+                .about__title {
+                    padding: 90px 0px;
+                    align-items: start;
+                    h2 {
+                        font-size: 2.5em;
+                    }
+                }
+                .about__presentation {
+                    overflow:hidden;
+                    border-radius: 3px;
+                    margin:0;
+                    padding:0;
+                    width:600px;
+                    border:3px solid black;
                     
+                    figure {
+                        position: relative;
+                        width:100%;
+                        animation: 20s slider infinite;
+                        display:flex;
+                        margin:0;
+                        padding:0;
+                        img {
+                            width:100%;
+                            float:left;
+                            
+                        }
+                    }
+                }    
+            }
+
+            .about__section2 {
+                grid-template-columns: auto 30% auto;
+                grid-template-rows: repeat(2, auto);
+                padding: 270px 0px;
+                display:flex;
+                margin:auto;
+                justify-content: space-around;
+                .about__decoration1 {
+                    grid-column: 1/2;
+                    grid-row: 1/3;
                     img {
-                        width:11%;
-                        float:left;
-                        
+                        width:400px;
+                    }
+                }
+                .about__text{
+                    grid-column: 2/3;
+                    grid-row: 1/3;
+                    line-height: 40px;
+                    width:30%;
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+                .about__decoration2 {
+                    grid-column: 3/4;
+                    grid-row: 2/3;
+                    justify-content:flex-end;
+                    display:flex;
+                    align-items: flex-end;
+                    img {
+                        width:400px;
                     }
                 }
             }
-            .about__text {
+
+            .about__section3 {
+                display:flex;
+                justify-content: space-around;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                padding:270px 0px;
+                background-color: #a4508b;
+                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+                .about__title {
+                    padding: 90px 0px;
+                    align-items: start;
+                    h2 {
+                        font-size: 2.5em;
+                    }
+                }
+                .about__presentation {
+                    overflow:hidden;
+                    border-radius: 3px;
+                    margin:0;
+                    padding:0;
+                    width:600px;
+                    height: 340px;
+                    border:3px solid black;
+                    
+                    figure {
+                        position: relative;
+                        width:100%;
+                        animation: 20s slider infinite;
+                        display:flex;
+                        margin:0;
+                        padding:0;
+                        img {
+                            width:100%;
+                            float:left;
+                            
+                        }
+                    }
+                }    
+            }
+
+            .about__section4 {
+                padding:180px 0px;
+                .about__cards {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin:auto;
+                    .about__card {
+                        width:25%;
+                        margin: 20px;
+                        text-align: center;
+                        .about__card--title {
+                            h2 {
+                                font-size: 2.5em;
+                            }
+                        }
+                        .about__card--img {
+                            img {
+                                width: 300px;
+                                height: 300px;
+                            }
     
+                        }
+                        .about__card--text {
+                        }
+                    }
+                }  
+            }
+
+            .about__section5{
+                padding:90px 0px;
+                display:flex;
+                width: 50%;
+                margin:auto;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .about__title {
+                    line-height: 40px;
+                    letter-spacing: 3px;
+                    h2 {
+                        font-size: 2.5em;
+                        a {
+                            color:black;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
+        
     }
     
 }

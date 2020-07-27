@@ -17,7 +17,9 @@ const router = async (routes) => {
             return content.innerHTML = await pages.character()
         }
         default: {
-            return content.innerHTML = await pages.error404()
+            return content.innerHTML = `
+                <h2>pipo</h2>
+            `
         }
     }
 }

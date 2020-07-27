@@ -5,7 +5,7 @@ const Character = async () => {
     const url = getUrl();
     const id = await url.slice(1).toLocaleLowerCase().split('/')[1] - 1;
     const data = await getData()
-    const characters = data.results[id]
+    const characters =  data.results[id]
     const view = `
         <div class="character">
             <article class="character__presentation">
