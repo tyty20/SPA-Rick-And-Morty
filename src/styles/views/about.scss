@@ -4,8 +4,9 @@ body {
     margin:0;
     padding:0;
     #content {
+        margin:0px;
+        padding:0px;
         .About {
-
             .about__section1 {
                 background-color: #a4508b;
                 background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
@@ -22,6 +23,8 @@ body {
                     h2 {
                         font-size: 2.5em;
                         color: white;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 800;
                     }
                 }
                 .about__presentation {
@@ -65,10 +68,12 @@ body {
                 .about__text{
                     grid-column: 2/3;
                     grid-row: 1/3;
-                    line-height: 40px;
+                    line-height: 50px;
                     width:30%;
                     p {
                         font-size: 1.3em;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 400;
                     }
                 }
                 .about__decoration2 {
@@ -89,14 +94,15 @@ body {
                 flex-direction: row;
                 text-align: center;
                 align-items: center;
-                padding:270px 0px;
+                padding:180px 90px;
                 background-color: #a4508b;
                 background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
                 .about__title {
-                    padding: 90px 0px;
-                    align-items: start;
+                    margin-left: 120px;
                     h2 {
                         font-size: 2.5em;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 800;
                         color:white;
                     }
                 }
@@ -136,10 +142,16 @@ body {
                     .about__card {
                         width:25%;
                         margin: 0px 50px;
-                        text-align: center;
+                        padding-bottom: 90px;
                         .about__card--title {
                             border:3px solid purple;
+                            background-color: purple;
+                            color:white;
                             border-radius: 3px;
+                            text-align: center;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+
                             h2 {
                                 font-size: 2.5em;
                             }
@@ -152,9 +164,11 @@ body {
     
                         }
                         .about__card--text {
-                            border:3px solid purple;
                             line-height: 40px;
                             border-radius: 3px;
+                            text-align: left;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 400;
                             p {
                                 font-size: 1em;
                                 
@@ -163,7 +177,7 @@ body {
                             span {
                                 font-size: 1em;
                                 a {
-                                    color:black;
+                                    color:purple;
                                     text-decoration: none;
                                 }
                             }
@@ -184,7 +198,7 @@ body {
                 background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
                 color: white;
                 .about__title {
-                    line-height: 40px;
+                    line-height: 50px;
                     letter-spacing: 3px;
                     width: 50%;
                     h2 {
