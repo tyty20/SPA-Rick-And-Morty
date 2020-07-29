@@ -134,6 +134,9 @@ const About = () => {
                 <div class="about__title">
                     <h2>Muchas gracias por haber llegado hasta aca, la api con la cual me base para sacar los datos de los personajes la puedes encontrar <a target="blank" href="https://rickandmortyapi.com/">aca</a></h2>
                 </div>
+                <div class="about__image">
+                    <img src="../media/api.png" alt ="Api Rick And Morty">
+                </div>
             </div>
         </div>
     `
