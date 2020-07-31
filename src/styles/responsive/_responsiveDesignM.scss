@@ -1,0 +1,103 @@
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+    body {
+        width: 100%;
+        height: 100%;
+        padding:0px;
+        margin:0px;
+        #header {
+            width: 100%;
+            height: 100%;
+        }
+        #content {
+            width: 100%;
+            height: 100%;
+            .content__presentation {
+                flex-direction: column;
+                .content__presentation--img {
+                    padding:40px;
+                    img {
+                        width:100%;
+                    }
+                }
+                .content__presentation--text {
+                    padding:60px;
+                }
+            }
+            .About {
+                .about__section1 {
+                    display:flex;
+                    flex-direction: column;
+                    .about__title {
+                        width: 90%;
+                        padding: 0px;
+                    }
+                    .about__presentation {
+                        width: 90%;
+                        margin-top: 90px;
+                    }
+                }
+                .about__section2{
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .about__decoration1 {
+                        display:flex;
+                        justify-content: center;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                    .about__text {
+                        width:80%;
+                        margin:90px 0px;
+                    }
+                    .about__decoration2 {
+                        display:flex;
+                        justify-content: center;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+                .about__section3 {
+                    display:flex;
+                    flex-direction: column-reverse;
+                    .about__presentation {
+                        width:90%;
+                        margin-top: 90px;
+                    }
+                    .about__title {
+                        margin-left:0px;
+                    }
+                }
+                .about__section4 {
+                    .about__cards {
+                        .about__card {
+                            width:35%;
+                            margin: 0px 35px;
+                        }
+                    }
+                }
+                .about__section5 {
+                    display:flex;
+                    flex-direction: column-reverse;
+                    .about__title {
+                        margin-top:90px;
+                        width:90%; 
+                        padding-right: 0px;
+                    }
+                    .about__image {
+                        border:none;
+                        img {
+                            width: 90%;
+                            border: 3px solid black;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,276 @@
+@media screen and (min-width:0px) and (max-width: 379px) {
+    body {
+        width: 100vh;
+        padding:0;
+        margin:0;
+        #header {
+            width:100%;
+            display:flex;
+            justify-content: space-evenly;
+        }
+        #content {
+            width:100%;
+            .content__presentation {
+                display:block;
+                text-align: center;
+
+                .content__presentation--img {
+                    padding:20px;
+                    img {
+                        width:90%;
+                    }
+                }
+                .content__presentation--text {
+                    padding-right: null;
+                    padding:0px 60px;
+                }
+            }
+            .character {
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                height:100%;
+                .character__presentation {
+
+                    img {
+                        width:90%;
+                    }
+                    
+                }
+            }
+            .About {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: block;
+                .about__section1 {
+                    display:flex;
+                    flex-direction: column;
+                    padding:90px 20px;
+                    .about__title {
+                        width: 80%;
+                        padding:0px;
+                    }
+                    .about__presentation {
+                        width:80%;
+                        margin-top:90px;
+                        figure {
+                            img {
+                                
+                            }
+                        }
+                    }
+                }
+                .about__section2 {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .about__decoration1 {
+                    }
+                    .about__text {
+                        padding:0px;
+                        width:80%;
+                        margin:90px 0px;
+                    }
+                    .about__decoration2 {
+                    }
+                }
+                .about__section3 {
+                    padding: 90px 20px;
+                    flex-direction: column-reverse;
+                    .about__presentation {
+                        width:80%;
+                        margin-top: 90px;
+                    }
+                    .about__title {
+                        margin-left:0px;
+                        text-align: center;
+                        width:80%;
+                    }
+                }
+                .about__section4 {
+                    .about__cards {
+                        flex-wrap:none;
+                        padding:0px 90px;
+                        .about__card {
+                            width:100%;
+                            margin:0px;
+
+                        }
+                    }
+                }
+                .about__section5 {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    padding: 90px 20px;
+                    box-sizing: border-box;
+                    .about__title {
+                        width:80%;
+                        padding-right: 0px;
+                        margin-top:90px;
+                    }
+                    .about__image {
+                        border:none;
+                        img {
+                            width: 80%;
+                            border:3px solid black;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 649px){
+    body {
+        width: 100%;
+        padding:0px;
+        margin:0px;
+        #header {
+            width: 100%;
+            height: 100%;
+        }
+        #content {
+            width:100%;
+            height: 100%;
+            .content__presentation {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .content__presentation--img {
+                    padding: 20px;
+                    img {
+                        width:90%;
+                    }
+                }
+                .content__presentation--text {
+                    padding-right: null;
+                    padding:0px 60px;
+
+                }
+            }
+            .character {
+                width:100%;
+                display:flex;
+                flex-direction: column;
+                height:100%;
+                .character__presentation {
+
+                    img {
+                        width:90%;
+                    }
+                    
+                }
+            }
+            .About {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                display: block;
+                .about__section1 {
+                    display:flex;
+                    flex-direction: column;
+                    padding:90px 20px;
+                    .about__title {
+                        width: 90%;
+                        padding:0px;
+                        margin:0px;
+                    }
+                    .about__presentation {
+                        width:90%;
+                        margin-top:90px;
+                        figure {
+                            img {
+                                
+                            }
+                        }
+                    }
+                }
+                .about__section2 {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    .about__decoration1 {
+                        width:90%;
+                        display:block;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                    .about__text {
+                        padding:0px;
+                        width:90%;
+                        margin:90px 0px;
+                    }
+                    .about__decoration2 {
+                        display:block;
+                        width:90%;
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+                .about__section3 {
+                    padding: 90px 20px;
+                    flex-direction: column-reverse;
+                    .about__presentation {
+                        width:90%;
+                        margin-top: 90px;
+                        border:none;
+                        box-sizing: border-box;
+                        figure {
+                            img {
+                                border: 3px solid black;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                    .about__title {
+                        margin-left:0px;
+                        text-align: center;
+                        width:90%;
+                    }
+                }
+                .about__section4 {
+                    .about__cards {
+                        flex-wrap:none;
+                        padding:0px 45px;
+                        .about__card {
+                            width:100%;
+                            margin:0px;
+
+                        }
+                    }
+                }
+                .about__section5 {
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    padding: 90px 20px;
+                    box-sizing: border-box;
+
+                    .about__title {
+                        width:90%;
+                        padding-right: 0px;
+                        margin-top:90px;
+                    }
+                    .about__image {
+                        border:none;
+                        img {
+                            width: 90%;
+                            border:3px solid black;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
