@@ -23,6 +23,21 @@
                     padding:60px;
                 }
             }
+
+            .character {
+                flex-direction: column;
+                .character__presentation {
+                    img {
+                        width:80%;
+                    }
+                }
+                .character__description {
+                    padding-left: 0px;
+                    text-align: center;
+                    width:80%;
+                }
+            }
+
             .About {
                 .about__section1 {
                     display:flex;
@@ -71,9 +86,11 @@
                     }
                 }
                 .about__section4 {
+                    display: flex;
+                    flex-direction: column;
                     .about__cards {
                         .about__card {
-                            width:35%;
+                            width:60%;
                             margin: 0px 35px;
                         }
                     }

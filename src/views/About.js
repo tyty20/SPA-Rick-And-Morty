@@ -19,8 +19,8 @@ const About = () => {
             </div>
 
             <div class="about__section2">
-                <div class="about__decoration1">
-                    <img src="../media/rickandmortyDecorate.png" alt="Rick And Morty">
+                <div class="about__decoration1" id="img-1">
+                    <img src="../media/rickandmortyfondo1.png" alt="Rick And Morty">
                 </div>
                 <div class="about__text">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.
@@ -28,18 +28,18 @@ const About = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.</p>
                 </div>
-                <div class="about__decoration2">
-                    <img src="../media/rickandmortyDecorate2.png" alt="Rick And Morty">
+                <div class="about__decoration2" id="img-2">
+                    <img src="../media/rickandmortyDecorate2.png"  alt="Rick And Morty">
                 </div>
             </div>
 
             <div class="about__section3">
                 <div class="about__presentation">
                     <figure>
-                        <img src="../media/samuraijack.png">
+                        <img src="../media/samuraijack2.png">
                         <img src="../media/aquateenforce.png">
-                        <img src="../media/samuraijack.png">
-                        <img src="../media/spaceghost.png">
+                        <img src="../media/samuraijack2.png">
+                        <img src="../media/spaceghost2.png">
                         <img src="../media/aquateenforce.png">
                     </figure>
                 </div>

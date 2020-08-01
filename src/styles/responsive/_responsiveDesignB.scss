@@ -1,7 +1,37 @@
 @media screen and (min-width: 1200px) and (max-width: 1399px){
-
-}
-
-@media screen and (min-width: 1400px) and (max-width: 3000px) {
-    
+    body {
+        #content {
+            .About {
+                .about__section3 {
+                    .about__presentation {
+                        border:none;
+                        figure {
+                            img {
+                                border:3px solid black;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                }
+                .about__section4 {
+                    .about__cards {
+                        margin:0px;
+                        .about__card {
+                            width:35%;
+                        }
+                    }
+                }
+                .about__section5 {
+                    box-sizing:border-box;
+                    padding:180px 40px;
+                    .about__title {
+                        margin-right:30px
+                    }
+                    .about__image {
+                        margin-left:30px
+                    }
+                }
+            }
+        }
+    }
 }
