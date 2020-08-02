@@ -29,7 +29,7 @@ const About = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.</p>
                 </div>
                 <div class="about__decoration2">
-                    <img src="../media/rickandmortyDecorate2.png" id="image2" alt="Rick And Morty">
+                    <img src="../media/rickandmortyfondo2.png" id="image2" alt="Rick And Morty">
                 </div>
             </div>
 
