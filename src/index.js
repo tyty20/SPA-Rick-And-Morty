@@ -9,6 +9,7 @@ import sass from './styles/views/main.scss'
 //Sass styles for the responsive Design
 
 import responsive from './styles/responsive/mainResponsive.scss'
+import observer from './utils/getObserver'
 
 //Event for navegation to routes
 

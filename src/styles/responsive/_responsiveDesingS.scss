@@ -127,6 +127,22 @@
 
 
             }
+            .error404 {
+                width:100%;
+                height: 100%;
+                padding: 270px 0px;
+                box-sizing: border-box;
+                .error404__presentation {
+                    h2 {
+
+                    }
+                }
+                .error404__text {
+                    p {
+
+                    }
+                }
+            }
         }
     }
 }

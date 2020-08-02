@@ -16,10 +16,8 @@ const router = async (routes) => {
         case `${url}`:{
             return content.innerHTML = await pages.character()
         }
-        default: {
-            return content.innerHTML = `
-                <h2>pipo</h2>
-            `
+        default:{
+            return content.innerHTML = await pages.error404()
         }
     }
 }

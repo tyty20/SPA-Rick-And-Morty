@@ -18,8 +18,8 @@ const About = () => {
                 </div>
             </div>
 
-            <div class="about__section2">
-                <div class="about__decoration1" id="img-1">
+            <div class="about__section2" id="section1">
+                <div class="about__decoration1">
                     <img src="../media/rickandmortyfondo1.png" alt="Rick And Morty">
                 </div>
                 <div class="about__text">
@@ -28,7 +28,7 @@ const About = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.</p>
                 </div>
-                <div class="about__decoration2" id="img-2">
+                <div class="about__decoration2">
                     <img src="../media/rickandmortyDecorate2.png"  alt="Rick And Morty">
                 </div>
             </div>

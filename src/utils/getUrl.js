@@ -1,6 +1,8 @@
 const getUrl = () => {
     let x = window.location.hash;
-    return x
+    if(x.length <= 3 ) {
+        return x
+    }
 }
 
 export {getUrl}
