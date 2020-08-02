@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A page of the serie Rick and Morty, where show the characters",
   "main": "index.js",
+
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development"
@@ -22,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/tyty20/SPA-Rick-And-Morty/issues"
   },
-  "homepage": "https://github.com/tyty20/SPA-Rick-And-Morty#readme",
+  "homepage": "https://tyty20.github.io/SPA-Rick-And-Morty/",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "babel-loader": "^8.1.0",
