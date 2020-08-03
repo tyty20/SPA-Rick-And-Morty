@@ -55,7 +55,7 @@ const About = () => {
                             <h2>AquaTeen Force</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/aquateenforce.png" alt="AquaTeen Force">
+                            <img src="../assets/media/aquateenforce.png" alt="AquaTeen Force">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -68,7 +68,7 @@ const About = () => {
                             <h2> Samurai Jack</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/samuraijack.png" alt="Samurai Jack">
+                            <img src="../assets/media/samuraijack.png" alt="Samurai Jack">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -81,7 +81,7 @@ const About = () => {
                             <h2>Space Ghost</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/spaceghost.png" alt="Space Ghost">
+                            <img src="../assets/media/spaceghost.png" alt="Space Ghost">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -94,7 +94,7 @@ const About = () => {
                             <h2>Family Guy</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/familyguy.png" alt="Family Guy">
+                            <img src="../assets/media/familyguy.png" alt="Family Guy">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -107,7 +107,7 @@ const About = () => {
                             <h2>The Brak Show </h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/thebrakshow.png" alt ="The Brak Show">
+                            <img src="../assets/media/thebrakshow.png" alt ="The Brak Show">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -120,7 +120,7 @@ const About = () => {
                             <h2>Bob's Burgers</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../dist/media/bobburgers.png" alt="Bob's Burgers">
+                            <img src="../assets/media/bobburgers.png" alt="Bob's Burgers">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
