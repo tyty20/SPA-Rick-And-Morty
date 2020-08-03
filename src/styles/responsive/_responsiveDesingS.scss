@@ -31,7 +31,6 @@
                 flex-direction: column;
                 height:100%;
                 .character__presentation {
-
                     img {
                         width:90%;
                     }
@@ -40,7 +39,7 @@
                 .character__description {
                     padding-left: 0px;
                     text-align: center;
-                    width:80%;
+                    width:90%;
                 }
             }
             .About {
@@ -52,6 +51,7 @@
                     display:flex;
                     flex-direction: column;
                     padding:90px 20px;
+                    box-sizing: border-box;
                     .about__title {
                         width: 80%;
                         padding:0px;
@@ -61,7 +61,8 @@
                         margin-top:90px;
                         figure {
                             img {
-                                
+                                width:100%;
+                                float:left;
                             }
                         }
                     }
@@ -85,9 +86,16 @@
                 .about__section3 {
                     padding: 90px 20px;
                     flex-direction: column-reverse;
+                    box-sizing: border-box;
                     .about__presentation {
                         width:80%;
                         margin-top: 90px;
+                        figure {
+                            img {
+                                width:100%;
+                                float:left;
+                            }
+                        }
                     }
                     .about__title {
                         margin-left:0px;
@@ -132,16 +140,6 @@
                 height: 100%;
                 padding: 270px 0px;
                 box-sizing: border-box;
-                .error404__presentation {
-                    h2 {
-
-                    }
-                }
-                .error404__text {
-                    p {
-
-                    }
-                }
             }
         }
     }
@@ -181,7 +179,6 @@
                 flex-direction: column;
                 height:100%;
                 .character__presentation {
-
                     img {
                         width:90%;
                     }
@@ -190,7 +187,7 @@
                 .character__description {
                     padding-left: 0px;
                     text-align: center;
-                    width:80%;
+                    width:90%;
                 }
             }
             .About {
@@ -202,6 +199,7 @@
                     display:flex;
                     flex-direction: column;
                     padding:90px 20px;
+                    box-sizing:border-box;
                     .about__title {
                         width: 90%;
                         padding:0px;
@@ -212,7 +210,8 @@
                         margin-top:90px;
                         figure {
                             img {
-                                
+                                width:100%;
+                                float:left;
                             }
                         }
                     }
@@ -246,6 +245,7 @@
                 .about__section3 {
                     padding: 90px 20px;
                     flex-direction: column-reverse;
+                    box-sizing: border-box;
                     .about__presentation {
                         width:90%;
                         margin-top: 90px;
@@ -255,6 +255,8 @@
                             img {
                                 border: 3px solid black;
                                 box-sizing: border-box;
+                                width: 100%;
+                                float:left;
                             }
                         }
                     }
@@ -271,7 +273,6 @@
                         .about__card {
                             width:100%;
                             margin:0px;
-
                         }
                     }
                 }

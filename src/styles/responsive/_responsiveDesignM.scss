@@ -49,6 +49,12 @@
                     .about__presentation {
                         width: 90%;
                         margin-top: 90px;
+                        figure {
+                            img {
+                                float:left;
+                                width: 100%;
+                            }
+                        }
                     }
                 }
                 .about__section2{
@@ -81,6 +87,12 @@
                     .about__presentation {
                         width:90%;
                         margin-top: 90px;
+                        figure {
+                            img {
+                                width:100%;
+                                float:left;
+                            }
+                        }
                     }
                     .about__title {
                         margin-left:0px;
