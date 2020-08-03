@@ -9,18 +9,18 @@ const About = () => {
                 </div>
                 <div class="about__presentation">
                     <figure>
-                        <img src="../media/rickandmorty1.png" alt="rick And Morty 1">
-                        <img src="../media/rickandmorty2.png" alt="Rick And Morty 2">
-                        <img src="../media/rickandmorty3.png" alt="Rick And Morty 3">
-                        <img src="../media/rickandmorty1.png" alt="Rick And Morty 4">
-                        <img src="../media/rickandmorty2.png" alt="Rick And Morty 5">
+                        <img src="../dist/media/rickandmorty1.png" alt="rick And Morty 1">
+                        <img src="../dist/media/rickandmorty2.png" alt="Rick And Morty 2">
+                        <img src="../dist/media/rickandmorty3.png" alt="Rick And Morty 3">
+                        <img src="../dist/media/rickandmorty1.png" alt="Rick And Morty 4">
+                        <img src="../dist/media/rickandmorty2.png" alt="Rick And Morty 5">
                     </figure>
                 </div>
             </div>
 
             <div class="about__section2">
                 <div class="about__decoration1" >
-                    <img src="../media/rickandmortyfondo1.png" id="image1" alt="Rick And Morty">
+                    <img src="../dist/media/rickandmortyfondo1.png" id="image1" alt="Rick And Morty">
                 </div>
                 <div class="about__text">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.
@@ -29,18 +29,18 @@ const About = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.</p>
                 </div>
                 <div class="about__decoration2">
-                    <img src="../media/rickandmortyfondo2.png" id="image2" alt="Rick And Morty">
+                    <img src="../dist/media/rickandmortyfondo2.png" id="image2" alt="Rick And Morty">
                 </div>
             </div>
 
             <div class="about__section3">
                 <div class="about__presentation">
                     <figure>
-                        <img src="../media/samuraijack2.png">
-                        <img src="../media/aquateenforce.png">
-                        <img src="../media/samuraijack2.png">
-                        <img src="../media/spaceghost2.png">
-                        <img src="../media/aquateenforce.png">
+                        <img src="../dist/media/samuraijack2.png">
+                        <img src="../dist/media/aquateenforce.png">
+                        <img src="../dist/media/samuraijack2.png">
+                        <img src="../dist/media/spaceghost2.png">
+                        <img src="../dist/media/aquateenforce.png">
                     </figure>
                 </div>
                 <div class="about__title">
@@ -55,7 +55,7 @@ const About = () => {
                             <h2>AquaTeen Force</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/aquateenforce.png" alt="AquaTeen Force">
+                            <img src="../dist/media/aquateenforce.png" alt="AquaTeen Force">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -68,7 +68,7 @@ const About = () => {
                             <h2> Samurai Jack</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/samuraijack.png" alt="Samurai Jack">
+                            <img src="../dist/media/samuraijack.png" alt="Samurai Jack">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -81,7 +81,7 @@ const About = () => {
                             <h2>Space Ghost</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/spaceghost.png" alt="Space Ghost">
+                            <img src="../dist/media/spaceghost.png" alt="Space Ghost">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -94,7 +94,7 @@ const About = () => {
                             <h2>Family Guy</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/familyguy.png" alt="Family Guy">
+                            <img src="../dist/media/familyguy.png" alt="Family Guy">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -107,7 +107,7 @@ const About = () => {
                             <h2>The Brak Show </h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/thebrakshow.png" alt ="The Brak Show">
+                            <img src="../dist/media/thebrakshow.png" alt ="The Brak Show">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -120,7 +120,7 @@ const About = () => {
                             <h2>Bob's Burgers</h2>
                         </div>
                         <div class="about__card--img">
-                            <img src="../media/bobburgers.png" alt="Bob's Burgers">
+                            <img src="../dist/media/bobburgers.png" alt="Bob's Burgers">
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
@@ -135,7 +135,7 @@ const About = () => {
                     <h2>Muchas gracias por haber llegado hasta aca, la api con la cual me base para sacar los datos de los personajes la puedes encontrar <a target="blank" href="https://rickandmortyapi.com/">aca</a></h2>
                 </div>
                 <div class="about__image">
-                    <img src="../media/api.png" alt ="Api Rick And Morty">
+                    <img src="../dist/media/api.png" alt ="Api Rick And Morty">
                 </div>
             </div>
         </div>
