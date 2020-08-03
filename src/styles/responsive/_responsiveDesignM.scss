@@ -27,6 +27,7 @@
             .character {
                 flex-direction: column;
                 .character__presentation {
+                    width:90%;
                     img {
                         width:80%;
                     }
@@ -50,6 +51,7 @@
                         width: 90%;
                         margin-top: 90px;
                         figure {
+                            width:100%;
                             img {
                                 float:left;
                                 width: 100%;
