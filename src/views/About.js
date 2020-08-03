@@ -9,18 +9,18 @@ const About = () => {
                 </div>
                 <div class="about__presentation">
                     <figure>
-                        <img src="../dist/media/rickandmorty1.png" alt="rick And Morty 1">
-                        <img src="../dist/media/rickandmorty2.png" alt="Rick And Morty 2">
-                        <img src="../dist/media/rickandmorty3.png" alt="Rick And Morty 3">
-                        <img src="../dist/media/rickandmorty1.png" alt="Rick And Morty 4">
-                        <img src="../dist/media/rickandmorty2.png" alt="Rick And Morty 5">
+                        <img src="../assets/media/rickandmorty1.png" alt="rick And Morty 1">
+                        <img src="../assets/media/rickandmorty2.png" alt="Rick And Morty 2">
+                        <img src="../assets/media/rickandmorty3.png" alt="Rick And Morty 3">
+                        <img src="../assets/media/rickandmorty1.png" alt="Rick And Morty 4">
+                        <img src="../assets/media/rickandmorty2.png" alt="Rick And Morty 5">
                     </figure>
                 </div>
             </div>
 
             <div class="about__section2">
                 <div class="about__decoration1" >
-                    <img src="../dist/media/rickandmortyfondo1.png" id="image1" alt="Rick And Morty">
+                    <img src="../assets/media/rickandmortyfondo1.png" id="image1" alt="Rick And Morty">
                 </div>
                 <div class="about__text">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.
@@ -29,18 +29,18 @@ const About = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur.</p>
                 </div>
                 <div class="about__decoration2">
-                    <img src="../dist/media/rickandmortyfondo2.png" id="image2" alt="Rick And Morty">
+                    <img src="../assets/media/rickandmortyfondo2.png" id="image2" alt="Rick And Morty">
                 </div>
             </div>
 
             <div class="about__section3">
                 <div class="about__presentation">
                     <figure>
-                        <img src="../dist/media/samuraijack2.png">
-                        <img src="../dist/media/aquateenforce.png">
-                        <img src="../dist/media/samuraijack2.png">
-                        <img src="../dist/media/spaceghost2.png">
-                        <img src="../dist/media/aquateenforce.png">
+                        <img src="../assets/media/samuraijack2.png">
+                        <img src="../assets/media/aquateenforce.png">
+                        <img src="../assets/media/samuraijack2.png">
+                        <img src="../assets/media/spaceghost2.png">
+                        <img src="../assets/media/aquateenforce.png">
                     </figure>
                 </div>
                 <div class="about__title">
@@ -135,7 +135,7 @@ const About = () => {
                     <h2>Muchas gracias por haber llegado hasta aca, la api con la cual me base para sacar los datos de los personajes la puedes encontrar <a target="blank" href="https://rickandmortyapi.com/">aca</a></h2>
                 </div>
                 <div class="about__image">
-                    <img src="../dist/media/api.png" alt ="Api Rick And Morty">
+                    <img src="../assets/media/api.png" alt ="Api Rick And Morty">
                 </div>
             </div>
         </div>
