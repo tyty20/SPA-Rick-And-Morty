@@ -9,11 +9,11 @@ const About = () => {
                 </div>
                 <div class="about__presentation">
                     <figure>
-                        <img src="../media/rickandmorty1.png">
-                        <img src="../media/rickandmorty2.png">
-                        <img src="../media/rickandmorty3.png">
-                        <img src="../media/rickandmorty1.png">
-                        <img src="../media/rickandmorty2.png">
+                        <img src="%=require(../media/rickandmorty1.png)">
+                        <img src="%=require(../media/rickandmorty2.png)">
+                        <img src="%=require(../media/rickandmorty3.png)">
+                        <img src="%=require(../media/rickandmorty1.png)">
+                        <img src="%=require(../media/rickandmorty2.png)">
                     </figure>
                 </div>
             </div>
