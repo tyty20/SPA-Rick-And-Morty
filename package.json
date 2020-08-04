@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
-    "deploy": "npm run build && gh-pages -d dist"
+    "start": "webpack-dev-server --open --mode development"
   },
   "repository": {
     "type": "git",

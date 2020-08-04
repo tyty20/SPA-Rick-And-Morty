@@ -7,7 +7,7 @@ const router = async (routes) => {
     const url = getUrl();
     content.innerHTML = '';
     switch(routes){
-        case '/inicio': {
+        case '/': {
             return content.innerHTML = await pages.presentation()
         }
         case '#/': {
