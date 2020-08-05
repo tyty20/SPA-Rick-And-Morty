@@ -21,7 +21,6 @@
                     }
                 }
                 .content__presentation--text {
-                    padding-right: null;
                     padding:0px 60px;
                 }
             }
@@ -46,12 +45,9 @@
                 width: 100%;
                 height: 100%;
                 text-align: center;
-                display: block;
                 .about__section1 {
-                    display:flex;
                     flex-direction: column;
                     padding:90px 20px;
-                    box-sizing: border-box;
                     .about__title {
                         width: 80%;
                         padding:0px;
@@ -87,7 +83,6 @@
                 .about__section3 {
                     padding: 90px 20px;
                     flex-direction: column-reverse;
-                    box-sizing: border-box;
                     .about__presentation {
                         width:80%;
                         margin-top: 90px;
@@ -197,12 +192,9 @@
                 width: 100%;
                 height: 100%;
                 text-align: center;
-                display: block;
                 .about__section1 {
-                    display:flex;
                     flex-direction: column;
                     padding:90px 20px;
-                    box-sizing:border-box;
                     .about__title {
                         width: 90%;
                         padding:0px;
@@ -249,7 +241,6 @@
                 .about__section3 {
                     padding: 90px 20px;
                     flex-direction: column-reverse;
-                    box-sizing: border-box;
                     .about__presentation {
                         width:90%;
                         margin-top: 90px;
