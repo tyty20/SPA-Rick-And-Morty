@@ -59,7 +59,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://aqua-teen-hunger-force.fandom.com/wiki/ATHF_Wiki">Mas informacion</a></span>
+                            <span><a href="https://aqua-teen-hunger-force.fandom.com/wiki/Aqua_Teen_Hunger_Force">Mas informacion</a></span>
                         </div>
                     </div>
 
@@ -72,7 +72,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://samuraijack.fandom.com/es/wiki/Samurai_Jack">Mas informacion</a></span>
+                            <span><a href="https://samuraijack.fandom.com/es/wiki/Samurai_Jack">Mas informacion</a></span>
                         </div>
                     </div>
 
@@ -85,7 +85,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://spaceghost.fandom.com/wiki/Space_Ghost">Mas informacion</a></span>
+                            <span><a href="https://spaceghost.fandom.com/wiki/Space_Ghost">Mas informacion</a></span>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://familyguy.fandom.com/wiki/Main_Page">Mas informacion</a></span>
+                            <span><a href="https://familyguy.fandom.com/wiki/Family_Guy">Mas informacion</a></span>
                         </div>
                     </div>
                 
@@ -111,7 +111,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://cartoonnetwork.fandom.com/wiki/The_Brak_Show">Mas informacion</a></span>
+                            <span><a href="https://cartoonnetwork.fandom.com/wiki/The_Brak_Show">Mas informacion</a></span>
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@ const About = () => {
                         </div>
                         <div class="about__card--text">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolores labore asperiores distinctio porro illum cupiditate dignissimos consequuntur nisi quas iste beatae nesciunt veniam molestias expedita provident corrupti ducimus consequatur</p>
-                            <span><a target="blank" href="https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_Wiki">Mas informacion</a></span>
+                            <span><a href="https://bobs-burgers.fandom.com/wiki/Bob%27s_Burgers_Wiki">Mas informacion</a></span>
                         </div>
                     </div>
                 </div>
