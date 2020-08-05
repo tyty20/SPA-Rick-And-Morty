@@ -1,7 +1,3 @@
-//import the function 'getIndex'
-
-import {getIndex} from './utils/getIndex'
-
 //import the folder 'animations' of extension Sass
 
 import animations from './styles/animations/animations.scss'
@@ -21,12 +17,6 @@ import sass from './styles/views/main.scss'
 //import the folder 'responsive' of extension Sass
 
 import responsive from './styles/responsive/mainResponsive.scss'
-
-//Event for load a view 
-
-window.addEventListener('load', () => {
-    getIndex();
-})
 
 //Event for navegation to routes
 
