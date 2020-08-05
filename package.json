@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/tyty20/SPA-Rick-And-Morty/issues"
   },
-  "homepage": "https://tyty20.github.io/SPA-Rick-And-Morty/dist/loading.html",
+  "homepage": "https://tyty20.github.io/SPA-Rick-And-Morty/",
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "babel-loader": "^8.1.0",
