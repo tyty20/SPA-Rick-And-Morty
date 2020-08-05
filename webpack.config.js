@@ -49,12 +49,6 @@ module.exports = {
                 hash:true,
             }
         ),
-        new HtmlWebPackPlugin(
-            {   
-                template:'./public/loading.html',
-                filename:'./loading.html',
-            }
-        ),
         new MiniCssExtractPlugin(
             {
                 filename: 'style.css'
