@@ -1,16 +1,16 @@
 @import  '../animations/carousel';
 @import '../animations/fadeIn';
+@import '../variables/variables';
+
 body {
-    margin:0;
-    padding:0;
+    @include body;
     #content {
-        margin:0px;
-        padding:0px;
+        margin:$margin-min;
+        padding:$padding-min;
         .About {
             animation: fadeIn 2s ease-in;
             .about__section1 {
-                background-color: #a4508b;
-                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+                @include background-color;
                 display:flex;
                 justify-content: space-around;
                 flex-direction: row;
@@ -22,17 +22,17 @@ body {
                     padding: 90px 0px;
                     align-items: start;
                     h2 {
-                        font-size: 2.5em;
+                        font-size: map-get($font-size, max);
                         color: white;
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 800;
+                        font-family: $font-family;
+                        font-weight: map-get($font-weight, max);
                     }
                 }
                 .about__presentation {
                     overflow:hidden;
                     border-radius: 3px;
-                    margin:0;
-                    padding:0;
+                    margin:$margin-min;
+                    padding:$padding-min;
                     width:40%;
                     border:3px solid black;
                     
@@ -40,10 +40,10 @@ body {
                         position: relative;
                         animation: 20s slider infinite;
                         display:flex;
-                        margin:0;
-                        padding:0;
+                        margin: $margin-min;
+                        padding:$padding-min;
                         img {
-                            width:100%;
+                            width: map-get($width-percent, max);
                             float:left;
                             
                         }
@@ -71,9 +71,9 @@ body {
                     line-height: 40px;
                     width:30%;
                     p {
-                        font-size: 1.3em;
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 400;
+                        font-size: map-get($font-size, min);
+                        font-family: $font-family;
+                        font-weight: map-get($font-weight, min);
                     }
                 }
                 .about__decoration2 {
@@ -95,39 +95,36 @@ body {
                 text-align: center;
                 align-items: center;
                 padding:180px 90px;
-                background-color: #a4508b;
-                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+                @include background-color;
                 .about__title {
                     margin-left: 120px;
                     h2 {
-                        font-size: 2.5em;
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 800;
+                        font-size: map-get($font-size, max);
+                        font-family: $font-family;
+                        font-weight: map-get($font-weight, max);
                         color:white;
                     }
                 }
                 .about__presentation {
                     overflow:hidden;
                     border-radius: 3px;
-                    margin:0;
-                    padding:0;
+                    margin:$margin-min;
+                    padding:$padding-min;
                     width:40%;
-                    height: 100%;
+                    height: $height-percent;
                     border:3px solid black;
                     box-sizing: border-box;
                     
                     figure {
                         position: relative;
-                        width:100%;
+                        width: map-get($width-percent, max);
                         animation: 20s slider infinite;
                         display:flex;
-                        margin:0;
-                        padding:0;
+                        margin:$margin-min;
+                        padding:$padding-min;
                         img {
-                            width:100%;
-                            float:left;
-                            
-                            
+                            width: map-get($width-percent, max);
+                            float:left;   
                         }
                     }
                 }    
@@ -151,16 +148,16 @@ body {
                             color:white;
                             border-radius: 3px;
                             text-align: center;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 700;
+                            font-family: $font-family;
+                            font-weight: map-get($font-weight,medium);
 
                             h2 {
-                                font-size: 2.5em;
+                                font-size: map-get($font-size, max);
                             }
                         }
                         .about__card--img {
                             img {
-                                width: 100%;
+                                width: map-get($width-percent, max);
                                 height: 300px;
                             }
     
@@ -169,14 +166,15 @@ body {
                             line-height: 40px;
                             border-radius: 3px;
                             text-align: left;
-                            font-family: 'Montserrat', sans-serif;
-                            font-weight: 400;
+                            font-family: $font-family;
+                            font-weight: map-get($font-weight, min);
                             p {
-                                font-size: 1em;             
+                                font-size: map-get($font-size, extra-min);
+            
                             }
                             span {
-                                font-size: 1em;
-                                font-weight: 700;
+                                font-size: map-get($font-size, extra-min);
+                                font-weight: map-get($font-weight, medium);
                                 a {
                                     color:purple;
                                     text-decoration: none;
@@ -190,13 +188,12 @@ body {
             .about__section5{
                 padding:90px;
                 display:flex;
-                width: 100%;
+                width: map-get($width-percent, max);
                 margin:auto;
                 text-align: center;
                 align-items: center;
                 justify-content: center;
-                background-color: #a4508b;
-                background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+                @include background-color;
                 color: white;
                 box-sizing: border-box;
                 .about__title {
@@ -206,9 +203,9 @@ body {
                     margin-right:120px;
                     
                     h2 {
-                        font-size: 2.5em;
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 800;
+                        font-size: map-get($font-size, max);
+                        font-family: $font-family;
+                        font-weight: map-get($font-weight, max);
                         a {
                             color:white;
                             text-decoration: none;
@@ -216,13 +213,9 @@ body {
                     }
                 }
                 .about__image {
-                    
                     img {
                         width: 600px;
-                        border:3px solid black;
-                        border-radius:3px;
-                        box-sizing: border-box;
-                        
+                        @include border;   
                     }
                 }
             }

@@ -1,3 +1,11 @@
+//Import the file with variables of Sass
+
+import variables from './styles/variables/variables.scss'
+
+//Import the folder with the images of project
+
+import {images} from '../assets/media/images'
+
 //import the folder 'animations' of extension Sass
 
 import animations from './styles/animations/animations.scss'

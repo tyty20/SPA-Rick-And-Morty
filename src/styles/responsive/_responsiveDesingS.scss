@@ -1,23 +1,20 @@
+@import '../variables/variables';
+
 @media screen and (min-width:0px) and (max-width: 379px) {
     body {
-        width: 100%;
-        padding:0;
-        margin:0;
+        @include body;
         #header {
-            width:100%;
-            display:flex;
-            justify-content: space-evenly;
+            @include header;
         }
         #content {
-            width:100%;
+            @include content;
             .content__presentation {
-                display:block;
-                text-align: center;
+                @include content__presentation;
 
                 .content__presentation--img {
                     padding:20px;
                     img {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                     }
                 }
                 .content__presentation--text {
@@ -25,61 +22,51 @@
                 }
             }
             .character {
-                width:100%;
-                display:flex;
-                flex-direction: column;
-                height:100%;
+                @include character;
                 .character__presentation {
                     img {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                     }
                     
                 }
                 .character__description {
                     padding-left: 0px;
                     text-align: center;
-                    width:90%;
+                    width:map-get($width-percent, medium);
                 }
             }
             .About {
-                width: 100%;
-                height: 100%;
-                text-align: center;
+                @include about;
                 .about__section1 {
-                    flex-direction: column;
-                    padding:90px 20px;
+                    @include about__section1;
                     .about__title {
-                        width: 80%;
+                        width:map-get($width-percent, min);
                         padding:0px;
                     }
                     .about__presentation {
-                        width:80%;
+                        width:map-get($width-percent, min);
                         margin-top:90px;
                         figure {
-                            width:100%;
+                            width:map-get($width-percent, max);
                             img {
-                                width:100%;
+                                width:map-get($width-percent, max);
                                 float:left;
                             }
                         }
                     }
                 }
                 .about__section2 {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
+                    @include about__section2;
                     .about__decoration1 {
                         display:flex;
                         img {
-                            width:90%;
+                            width:map-get($width-percent, medium);
                             margin:auto;
                         }
                     }
                     .about__text {
-                        padding:0px;
-                        width:80%;
+                        padding:$padding-min;
+                        width:map-get($width-percent, min);
                         margin:90px 0px;
                     }
                     .about__decoration2 {
@@ -90,64 +77,57 @@
                     }
                 }
                 .about__section3 {
-                    padding: 90px 20px;
-                    flex-direction: column-reverse;
+                    @include about__section3;
                     .about__presentation {
-                        width:80%;
+                        width:map-get($width-percent, min);
                         margin-top: 90px;
                         figure {
-                            width:100%;
+                            width: map-get($width-percent, max);
                             img {
-                                width:100%;
+                                width: map-get($width-percent, max);
                                 float:left;
                             }
                         }
                     }
                     .about__title {
-                        margin-left:0px;
+                        margin-left:$margin-min;
                         text-align: center;
-                        width:80%;
+                        width:map-get($width-percent, min);
                     }
                 }
                 .about__section4 {
                     .about__cards {
                         flex-wrap:none;
-                        padding:0px;
-                        width: 90%;
+                        padding:$padding-min;
+                        width:map-get($width-percent, medium);
                         .about__card {
-                            width:100%;
-                            margin:0px;
-
+                            width:map-get($width-percent, max);
+                            margin:$margin-min;
                         }
                     }
                 }
                 .about__section5 {
-                    flex-direction: column-reverse;
-                    text-align: center;
-                    padding: 90px 20px;
-                    box-sizing: border-box;
-                    .about__title {
-                        width:80%;
-                        padding-right: 0px;
+                    @include about__section5(90px 20px, column-reverse);
+                   .about__title {
+                        width:map-get($width-percent, min);
+                        padding-right: $padding-min;
                         margin:90px 0px 0px 0px;
                         h2 {
-                            font-size: 2em;
+                            font-size: map-get($font-size, medium)
                         }
                     }
                     .about__image {
                         border:none;
                         img {
-                            width: 80%;
+                            width:map-get($width-percent, min);
                             border:3px solid black;
                         }
                     }
                 }
-
-
             }
             .error404 {
-                width:100%;
-                height: 100%;
+                width:map-get($width-percent, max);
+                height: $height-percent;
                 padding: 270px 0px;
                 box-sizing: border-box;
             }
@@ -157,121 +137,103 @@
 
 @media screen and (min-width: 380px) and (max-width: 649px){
     body {
-        width: 100%;
-        padding:0px;
-        margin:0px;
+        @include body;
         #header {
-            width: 100%;
-            height: 100%;
+            @include header;
         }
         #content {
-            width:100%;
-            height: 100%;
+            @include content;
             .content__presentation {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
+                @include content__presentation;
                 .content__presentation--img {
                     padding: 20px;
                     img {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                     }
                 }
                 .content__presentation--text {
                     padding:0px 40px;
-
                 }
             }
             .character {
-                width:100%;
-                display:flex;
-                flex-direction: column;
-                height:100%;
+                @include character;
                 .character__presentation {
-                    width:80%;
+                    width:map-get($width-percent, min);
                     img {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                     }
                     
                 }
                 .character__description {
-                    padding-left: 0px;
+                    padding-left: $padding-min;
                     text-align: center;
-                    width:90%;
+                    width:map-get($width-percent, medium);
                 }
             }
             .About {
-                width: 100%;
-                height: 100%;
-                text-align: center;
+                @include about;
                 .about__section1 {
-                    flex-direction: column;
-                    padding:90px 20px;
+                    @include about__section1;
                     .about__title {
-                        width: 90%;
-                        padding:0px;
-                        margin:0px;
+                        width: map-get($width-percent, medium);
+                        padding:$padding-min;
+                        margin:$margin-min;
                     }
                     .about__presentation {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                         margin-top:90px;
                         figure {
-                            width:100%;
+                            width:map-get($width-percent, max);
                             img {
-                                width:100%;
+                                width:map-get($width-percent, max);
                                 float:left;
                             }
                         }
                     }
                 }
                 .about__section2 {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
+                    @include about__section2;
                     .about__decoration1 {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                         display:block;
                         img {
-                            width: 90%;
+                            width:map-get($width-percent, medium);
                         }
                     }
                     .about__text {
-                        padding:0px;
-                        width:90%;
+                        padding:$padding-min;
+                        width:map-get($width-percent, medium);
                         margin:90px 0px;
                     }
                     .about__decoration2 {
                         display:block;
-                        width:90%;
+                        width:map-get($width-percent, medium);
                         img {
-                            width: 90%;
+                            width:map-get($width-percent, medium);
                         }
                     }
                 }
                 .about__section3 {
-                    padding: 90px 20px;
-                    flex-direction: column-reverse;
+                    @include about__section3;
                     .about__presentation {
-                        width:90%;
+                        width:map-get($width-percent, medium);
                         margin-top: 90px;
                         border:none;
                         box-sizing: border-box;
                         figure {
-                            width:100%;
+                            width:map-get($width-percent, max);
                             img {
                                 border: 3px solid black;
                                 box-sizing: border-box;
-                                width: 100%;
+                                width:map-get($width-percent, max);
                                 float:left;
                             }
                         }
                     }
                     .about__title {
-                        margin-left:0px;
+                        margin-left:$margin-min;
                         text-align: center;
-                        width:90%;
+                        width:map-get($width-percent, medium);
                     }
                 }
                 .about__section4 {
@@ -279,35 +241,30 @@
                         flex-wrap:none;
                         padding:0px 45px;
                         .about__card {
-                            width:100%;
-                            margin:0px;
+                            width:map-get($width-percent, max);
+                            margin:$margin-min;
                         }
                     }
                 }
                 .about__section5 {
-                    flex-direction: column-reverse;
-                    text-align: center;
-                    padding: 90px 20px;
-                    box-sizing: border-box;
+                    @include about__section5(90px 20px, column-reverse);
 
                     .about__title {
-                        width:90%;
-                        padding-right: 0px;
+                        width:map-get($width-percent, medium);
+                        padding-right: $padding-min;
                         margin:90px 0px 0px 0px;
                         h2 {
-                            font-size: 2em;
+                            font-size: map-get($font-size, medium);
                         }
                     }
                     .about__image {
                         border:none;
                         img {
-                            width: 90%;
+                            width:map-get($width-percent, medium);
                             border:3px solid black;
                         }
                     }
                 }
-
-
             }
         }
     }

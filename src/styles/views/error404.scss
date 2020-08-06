@@ -1,10 +1,11 @@
+@import '../variables/variables';
+
 body {
     #content {
         .error404 {
-            width: 100%;
+            width: map-get($width-percent, max);
             padding: 270px 0px;
-            background-color: #a4508b;
-            background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+            @include background-color;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -12,17 +13,17 @@ body {
             box-sizing: border-box; 
             .error404__presentation {
                 h2 {
-                    font-size: 2.5em;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 800;
+                    font-size: map-get($font-size, max);
+                    font-family: $font-family;
+                    font-weight: map-get($font-weight, max);
                     color: white;
                 }
             }
             .error404__text {
                 p {
-                    font-size: 2em;
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 700;
+                    font-size: map-get($font-size, medium);
+                    font-family: $font-family;
+                    font-weight: map-get($font-weight, medium);
                     color: white;
                 }
             }

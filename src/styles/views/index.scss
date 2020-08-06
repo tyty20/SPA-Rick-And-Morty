@@ -1,45 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;800&display=swap');
+@import '../variables/variables';
 
 body {
     #header {
-        display:flex;
-        justify-content: space-evenly;
+        @include header;
         background-color: #0B2947;
         .header__home {
             a {
-                text-decoration: none;
-                color: white;
-                font-family: 'Montserrat', sans-serif;
+                @include header__a;
                 h2 {
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    font-family: 'Montserrat', sans-serif;
+                    @include header__h2;
                 }
             }
         }
 
         .header__inicio {
             a {
-                text-decoration: none;
-                color:white;
-                font-family: 'Montserrat', sans-serif;
+                @include header__a;
                 h2 {
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    font-family: 'Montserrat', sans-serif;
-                    
+                    @include header__h2;      
                 }
             }
         }
 
         .header__about {
             a {
-                text-decoration: none;
-                color:white;
+                @include header__a;
                 h2 {
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    font-family: 'Montserrat', sans-serif;
+                    @include header__h2;
                 }
             }
         }
@@ -48,8 +36,7 @@ body {
         .content__presentation {
             padding:90px 0px;
             display:flex;
-            background-color: #a4508b;
-            background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); 
+            @include background-color;
             align-items: center;
 
             .content__presentation--img {
@@ -57,7 +44,6 @@ body {
                 img {
                     width: 800px;
                     border: 3px solid black;
-
                 }
             }
             .content__presentation--text {
@@ -65,22 +51,23 @@ body {
                 text-align: left;
                 box-sizing: border-box;
                 h2 {
-                    font-size: 2.5em;
+                    font-size: map-get($font-size, max);
                     color:white;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 800;
+                    font-family: $font-family;
+                    font-weight: map-get($font-weight, max);
                     
                 }
                 p {
-                    font-size: 1.3em;
+                    font-size: map-get($font-size, min);
                     color:white;
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: $font-family;
+                    font-weight: map-get($font-size, min);
                 }
                 .links {
                     padding-top:40px;
                     box-sizing: border-box;
                     a {
-                        font-size: 1.3em;
+                        font-size: map-get($font-size, min); 
                         text-decoration: none;
                         color: #a4508b;
                         margin-right: 20px;
@@ -90,10 +77,7 @@ body {
                         }
                     }
                 }
-
             }
-        }
-        
-
+        } 
     }
 }

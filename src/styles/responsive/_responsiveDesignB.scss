@@ -1,3 +1,5 @@
+@import '../variables/variables';
+
 @media screen and (min-width: 1200px) and (max-width: 1399px){
     body {
         #content {
@@ -15,20 +17,18 @@
                 }
                 .about__section4 {
                     .about__cards {
-                        margin:0px;
+                        margin:$margin-min;
                         .about__card {
                             width:35%;
                         }
                     }
                 }
                 .about__section5 {
-                    box-sizing:border-box;
-                    padding:180px 40px;
-                    flex-direction: row;
+                    @include about__section5(180px 40px, row);
                     .about__title {
                         margin-right:30px;
                         h2 {
-                            font-size: 2.5em;
+                            font-size: map-get($font-size, max);
                         }
                     }
                     .about__image {

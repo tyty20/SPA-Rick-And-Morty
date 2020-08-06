@@ -1,0 +1,110 @@
+$width-percent: (
+    min: 80%,
+    medium: 90%,
+    max: 100%,
+);
+
+$height-percent: 100%;
+
+$padding-min: 0;
+
+$margin-min: 0;
+
+$font-family: 'Montserrat', sans-serif;
+$font-weight: (
+    min: 400,
+    medium: 700,
+    max: 800,
+);
+$font-size: (
+    extra-min:1em,
+    min:1.3em,
+    medium: 2em,
+    max: 2.5em,
+);
+
+@mixin border {
+    border:3px solid black;
+    border-radius:3px;
+    box-sizing: border-box;
+}
+
+@mixin background-color {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+@mixin body {
+    width: map-get($width-percent, max);
+    padding: $padding-min;
+    margin: $margin-min;
+    height: $height-percent;
+}
+
+@mixin header {
+    width: map-get($width-percent, max);
+    height:$height-percent;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+@mixin header__a {
+    text-decoration: none;
+    color: white;
+    font-family: $font-family;
+}
+
+@mixin header__h2 {
+    font-size: map-get($font-size, min);
+    font-weight: map-get($font-weight, min);
+    font-family: $font-family;
+}
+
+@mixin content {
+    width: map-get($width-percent, max);
+    height: $height-percent;
+}
+
+@mixin content__presentation {
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin character {
+    width: map-get($width-percent, max);
+    height:$height-percent;
+    display:flex;
+    flex-direction: column;
+}
+
+@mixin about {
+    width: map-get($width-percent, max);
+    height: $height-percent;
+    text-align: center;
+}
+
+@mixin about__section1 {
+    flex-direction: column;
+    padding: 90px 20px;
+}
+
+@mixin about__section2 {
+    width: map-get($width-percent, max);
+    height: $height-percent;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin about__section3 {
+    padding: 90px 20px;
+    flex-direction: column-reverse;
+}
+
+@mixin about__section5($padding, $direction) {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 90px 20px;
+    box-sizing:border-box;
+}
