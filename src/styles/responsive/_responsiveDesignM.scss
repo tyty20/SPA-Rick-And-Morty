@@ -23,10 +23,13 @@
 
             .character {
                 flex-direction: column;
+                width: 100%;
+                height: 100%;
+                display: flex;
                 .character__presentation {
-                    width:map-get($width-percent, medium);
+                    width:map-get($width-percent, min);
                     img {
-                        width:map-get($width-percent, min);
+                        width: 60%;
                     }
                 }
                 .character__description {

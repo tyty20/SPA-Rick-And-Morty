@@ -24,10 +24,10 @@
             .character {
                 @include character;
                 .character__presentation {
+                    width:map-get($width-percent, medium);
                     img {
-                        width:map-get($width-percent, medium);
+                        width:60%;
                     }
-                    
                 }
                 .character__description {
                     padding-left: 0px;
@@ -158,9 +158,9 @@
             .character {
                 @include character;
                 .character__presentation {
-                    width:map-get($width-percent, min);
+                    width:map-get($width-percent, medium);
                     img {
-                        width:map-get($width-percent, medium);
+                        width: 60%;
                     }
                     
                 }

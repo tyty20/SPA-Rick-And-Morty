@@ -17,9 +17,8 @@ body {
             height: 100vh;
             padding:90px 0px;
             .character__presentation {
-
                 img {
-                    width: map-get($width-percent, max);
+                    width: 100%;
                     border-radius: 50px;
                     border: 3px solid black;   
                 }

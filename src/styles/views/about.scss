@@ -35,7 +35,7 @@ body {
                     padding:$padding-min;
                     width:40%;
                     border:3px solid black;
-                    
+                    animation:movementImg 2s ease;
                     figure {
                         position: relative;
                         animation: 20s slider infinite;
