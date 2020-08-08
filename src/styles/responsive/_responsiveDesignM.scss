@@ -1,6 +1,6 @@
 @import '../variables/variables';
 
-@media screen and (min-width: 650px) and (max-width: 1199px) {
+@media screen and (min-width: 724px) and (max-width: 1199px) {
     body {
         @include body;
         #header {
@@ -18,6 +18,17 @@
                 }
                 .content__presentation--text {
                     padding:0px 40px;
+                    h2 {
+                        font-size: 2em;
+                    }
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 1.3em;
+                    }
                 }
             }
 
@@ -31,11 +42,28 @@
                     img {
                         width: 60%;
                     }
+                    h2 {
+                        font-size: 2em;
+                    }
                 }
                 .character__description {
                     padding-left: $padding-min;
                     text-align: center;
                     width:map-get($width-percent, min);
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+
+            .characters {
+                .characters__presentation {
+                    a {
+                        img {}
+                        h2 {
+                            font-size: 1.7em;
+                        }
+                    }
                 }
             }
 
@@ -46,6 +74,9 @@
                     .about__title {
                         width:map-get($width-percent, medium);
                         padding: $padding-min;
+                        h2 {
+                            font-size: 2em;
+                        }
                     }
                     .about__presentation {
                         width:map-get($width-percent, medium);
@@ -64,20 +95,24 @@
                     .about__decoration1 {
                         display:flex;
                         justify-content: center;
+                        width: map-get($width-percent, max);
                         img {
-                            width:map-get($width-percent, medium);
+                            width: 60%;
                         }
                     }
                     .about__text {
                         width:map-get($width-percent, min);
                         margin:90px 0px;
+                        p {
+                            font-size: 1em;
+                        }
                     }
                     .about__decoration2 {
                         display:flex;
                         justify-content: center;
                         width:map-get($width-percent, max);
                         img {
-                            width:map-get($width-percent, medium);
+                            width: 60%;
                         }
                     }
                 }
@@ -95,6 +130,9 @@
                     }
                     .about__title {
                         margin-left:$margin-min;
+                        h2 {
+                            font-size: 2em;
+                        }
                     }
                 }
                 .about__section4 {
@@ -104,6 +142,16 @@
                         .about__card {
                             width:60%;
                             margin: 0px 35px;
+                            .about__card--title {
+                                h2 {
+                                    font-size: 2em;
+                                }
+                            }
+                            .about__card--text {
+                                p {
+                                    font-size: 1em;
+                                }
+                            }
                         }
                     }
                 }
@@ -114,7 +162,7 @@
                         width:map-get($width-percent, medium);
                         padding-right: $padding-min;
                         h2 {
-                            font-size: map-get($font-size, medium);
+                            font-size: 1.7em;
                         }
                     }
                     .about__image {

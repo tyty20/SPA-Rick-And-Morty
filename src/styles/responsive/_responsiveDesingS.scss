@@ -19,6 +19,18 @@
                 }
                 .content__presentation--text {
                     padding:0px 40px;
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                    p {
+                        font-size: 1em;
+                    }
+                }
+
+                .links {
+                    a {
+                        font-size: 1em;
+                    }
                 }
             }
             .character {
@@ -28,13 +40,31 @@
                     img {
                         width:60%;
                     }
+                    h2 {
+                        font-size: 1.7em;
+                    }
                 }
                 .character__description {
                     padding-left: 0px;
                     text-align: center;
                     width:map-get($width-percent, medium);
+                    h3 {
+                        font-size: 1em;
+                    }
                 }
             }
+
+            .characters {
+                .character__presentation {
+                    a {
+                        img{}
+                        h2{
+                            font-size: 1.7em;
+                        }
+                    }
+                }    
+            }
+
             .About {
                 @include about;
                 .about__section1 {
@@ -42,6 +72,9 @@
                     .about__title {
                         width:map-get($width-percent, min);
                         padding:0px;
+                        h2 {
+                            font-size: 1.7em;
+                        }
                     }
                     .about__presentation {
                         width:map-get($width-percent, min);
@@ -58,9 +91,9 @@
                 .about__section2 {
                     @include about__section2;
                     .about__decoration1 {
-                        display:flex;
+                        width: map-get($width-percent, max);
                         img {
-                            width:map-get($width-percent, medium);
+                            width:60%;
                             margin:auto;
                         }
                     }
@@ -68,10 +101,14 @@
                         padding:$padding-min;
                         width:map-get($width-percent, min);
                         margin:90px 0px;
+                        p {
+                            font-size: 1em;
+                        }
                     }
                     .about__decoration2 {
+                        width: map-get($width-percent, max);
                         img {
-                            width:90%;
+                            width:60%;
                             margin:auto;
                         }
                     }
@@ -93,6 +130,9 @@
                         margin-left:$margin-min;
                         text-align: center;
                         width:map-get($width-percent, min);
+                        h2 {
+                            font-size: 1.7em;
+                        }
                     }
                 }
                 .about__section4 {
@@ -103,6 +143,19 @@
                         .about__card {
                             width:map-get($width-percent, max);
                             margin:$margin-min;
+                            .about__card--title {
+                                h2 {
+                                    font-size: 1.7em;
+                                }
+                            }
+                            .about__card--text {
+                                p {
+                                    font-size: 1em;
+                                }
+                                span {
+                                    font-size: 1em;
+                                }
+                            }
                         }
                     }
                 }
@@ -113,7 +166,7 @@
                         padding-right: $padding-min;
                         margin:90px 0px 0px 0px;
                         h2 {
-                            font-size: map-get($font-size, medium)
+                            font-size: 1.3em;
                         }
                     }
                     .about__image {
@@ -130,12 +183,22 @@
                 height: $height-percent;
                 padding: 270px 0px;
                 box-sizing: border-box;
+                .error404__presentation {
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                }
+                .error404__text {
+                    p {
+                        font-size: 1em;
+                    }
+                }
             }
         }
     }
 }
 
-@media screen and (min-width: 380px) and (max-width: 649px){
+@media screen and (min-width: 380px) and (max-width: 723px){
     body {
         @include body;
         #header {
@@ -153,6 +216,17 @@
                 }
                 .content__presentation--text {
                     padding:0px 40px;
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                    p {
+                        font-size: 1em;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 1em;
+                    }
                 }
             }
             .character {
@@ -162,14 +236,32 @@
                     img {
                         width: 60%;
                     }
+                    h2 {
+                        font-size: 1.7em;
+                    }
                     
                 }
                 .character__description {
                     padding-left: $padding-min;
                     text-align: center;
                     width:map-get($width-percent, medium);
+                    h3 {
+                        font-size: 1em;
+                    }
                 }
             }
+
+            .characters {
+                .character__presentation {
+                    a {
+                        img{}
+                        h2{
+                            font-size: 1.7em;
+                        }
+                    }
+                }    
+            }
+
             .About {
                 @include about;
                 .about__section1 {
@@ -178,6 +270,9 @@
                         width: map-get($width-percent, medium);
                         padding:$padding-min;
                         margin:$margin-min;
+                        h2 {
+                            font-size: 1.7em;
+                        }
                     }
                     .about__presentation {
                         width:map-get($width-percent, medium);
@@ -194,22 +289,25 @@
                 .about__section2 {
                     @include about__section2;
                     .about__decoration1 {
-                        width:map-get($width-percent, medium);
+                        width:map-get($width-percent, max);
                         display:block;
                         img {
-                            width:map-get($width-percent, medium);
+                            width: 60%;
                         }
                     }
                     .about__text {
                         padding:$padding-min;
                         width:map-get($width-percent, medium);
                         margin:90px 0px;
+                        p {
+                            font-size: 1em;
+                        }
                     }
                     .about__decoration2 {
                         display:block;
-                        width:map-get($width-percent, medium);
+                        width:map-get($width-percent, max);
                         img {
-                            width:map-get($width-percent, medium);
+                            width:60%;
                         }
                     }
                 }
@@ -234,6 +332,9 @@
                         margin-left:$margin-min;
                         text-align: center;
                         width:map-get($width-percent, medium);
+                        h2 {
+                            font-size: 1.7em;
+                        }
                     }
                 }
                 .about__section4 {
@@ -243,6 +344,19 @@
                         .about__card {
                             width:map-get($width-percent, max);
                             margin:$margin-min;
+                            .about__card--title {
+                                h2 {
+                                    font-size: 1.7em;
+                                }
+                            }
+                            .about__card--text {
+                                p {
+                                    font-size: 1em;
+                                }
+                                span {
+                                    font-size: 1em;
+                                }
+                            }
                         }
                     }
                 }
@@ -254,7 +368,7 @@
                         padding-right: $padding-min;
                         margin:90px 0px 0px 0px;
                         h2 {
-                            font-size: map-get($font-size, medium);
+                            font-size: 1.3em;
                         }
                     }
                     .about__image {
@@ -263,6 +377,23 @@
                             width:map-get($width-percent, medium);
                             border:3px solid black;
                         }
+                    }
+                }
+            }
+
+            .error404 {
+                width:map-get($width-percent, max);
+                height: $height-percent;
+                padding: 270px 0px;
+                box-sizing: border-box;
+                .error404__presentation {
+                    h2 {
+                        font-size: 1.7em;
+                    }
+                }
+                .error404__text {
+                    p {
+                        font-size: 1em;
                     }
                 }
             }
