@@ -35,8 +35,10 @@ window.addEventListener('hashchange', () => {
 //Event for animations in about 
 
 window.addEventListener('hashchange', () => {
-    const image1 = window.location.hash === '#/about' ? document.getElementById('image1') : null
-    const image2 = window.location.hash === '#/about' ? document.getElementById('image2') : null
-    observer.observe(image1)
-    observer.observe(image2)
+    if(window.location.hash === '#/about'){
+        const image1 = document.getElementById('image1');
+        const image2 = document.getElementById('image2');
+        observer.observe(image1)
+        observer.observe(image2)
+    }
 })

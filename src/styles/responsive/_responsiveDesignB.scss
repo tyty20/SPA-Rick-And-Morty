@@ -1,41 +1,181 @@
 @import '../variables/variables';
 
-@media screen and (min-width: 1200px) and (max-width: 1399px){
+@media screen and (max-width: 1024px) and (min-width: 769px){
     body {
         #content {
-            .About {
-                .about__section3 {
+            .content__presentation {
+                padding:0px 40px;
+                box-sizing: border-box;
+                .content__presentation--img {
+                    width:50%;
+                    align-items: auto;
+                    padding:0px;
+                    box-sizing: border-box;
+                    margin-right:25px;
+                }
+                .content__presentation--text {
+                    width:50%;
+                    padding:0px;
+                    margin-left:25px;
+                    h2 {
+                        font-size: 2em;
+                    }
+                    p{
+                        font-size: 1.3em;
+                    }
+                }
+                .links {
+                    a {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .characters {
+                .characters__presentation {
+                    padding:0px 20px;
+                    a {
+                        h2 {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+            .character {
+                padding: 90px 40px;
+                box-sizing: border-box;
+                height:100vh;
+                .character__presentation {
+                    width: 100%;
+                    margin-right:25px;
+                    h2 {
+                        font-size: 2em;
+                    }
+
+                }
+                .character__description {
+                    width:100%;
+                    text-align: center;
+                    margin-left:25px;
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .about {
+                .about__section1 {
+                    .about__title {
+                        width:100%;
+                        text-align: center;
+                        padding:0px;
+                        margin-right:25px;
+                        h2 {
+                            font-size: 2em;
+                        }
+                    }
                     .about__presentation {
-                        border:none;
+                        width: 100%;
+                        box-sizing: border-box;
+                        margin-left:25px;
                         figure {
                             img {
-                                border:3px solid black;
-                                box-sizing: border-box;
+                                height: auto;
                             }
                         }
                     }
                 }
+                .about__section2 {
+                    padding:180px 0px;
+                    .about__decoration1 {
+                        width:25%;
+                        align-items: flex-start;
+                        img {
+                            margin:0;
+                        }
+                    }
+                    .about__presentation {
+                        width: 50%;
+                        margin:70px 0px;
+                        .about__presentation--text {
+                            width: 90%;
+                            p {
+                                font-size: 1.3em;
+                            }
+                        }
+                    }
+                    .about__decoration2 {
+                        width:25%;
+                        align-items: flex-end;
+                        img {
+                            margin:0;
+                        }
+                    }
+                }
+                .about__section3 {
+                    .about__presentation {
+                        width:100%;
+                        margin-right:25px;
+                        figure {
+                            img {
+                                height: 150px;
+                            }
+                        }
+                    }
+                    .about__title {
+                        width:100%;
+                        margin-left:25px;
+                        h2 {
+                            font-size: 2em;
+                        }
+                    }
+                }
                 .about__section4 {
+                    flex-direction: column;
+                    padding:90px 0px;
                     .about__cards {
-                        margin:$margin-min;
                         .about__card {
-                            width:35%;
+                            width:30%;
+                            .about__card--title {
+                                h2 {
+                                    font-size: 2em;
+                                }
+                            }
+                            .about__card--text {
+                                p {
+                                    font-size: 1em;
+                                }
+                                span {
+                                    font-size: 1em;
+                                }
+                            }
                         }
                     }
                 }
                 .about__section5 {
-                    @include about__section5(180px 40px, row);
                     .about__title {
-                        margin-right:30px;
+                        width:50%;
+                        margin-right:25px;
                         h2 {
-                            font-size: map-get($font-size, max);
+                            font-size: 2em;
                         }
                     }
                     .about__image {
-                        margin-left:30px
+                        width:50%;
+                        margin-left:25px;
                     }
                 }
             }
+            .error404 {
+                .error404__presentation {
+                    h2 {
+                        font-size: 2em;
+                    }
+                }
+                .error404__text {
+                    p {
+                        font-size: 1.3m;
+                    }
+                }
+            } 
         }
     }
 }

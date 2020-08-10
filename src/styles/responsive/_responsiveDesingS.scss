@@ -1,112 +1,109 @@
 @import '../variables/variables';
 
-@media screen and (min-width:0px) and (max-width: 379px) {
+@media screen and (max-width: 320px) and (min-width:0px){
     body {
-        @include body;
-        #header {
-            @include header;
-        }
         #content {
-            @include content;
             .content__presentation {
-                @include content__presentation;
-
+                height: auto;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding:90px 20px;
                 .content__presentation--img {
-                    padding:20px;
-                    img {
-                        width:map-get($width-percent, medium);
-                    }
+                    width:100%;
+                    align-items: auto;
+                    padding:0px;
+                    box-sizing: border-box;
+                    margin:0px;
                 }
                 .content__presentation--text {
-                    padding:0px 40px;
+                    width:100%;
+                    padding:0px;
+                    margin:0px;
                     h2 {
                         font-size: 1.7em;
                     }
-                    p {
+                    p{
                         font-size: 1em;
                     }
                 }
-
                 .links {
                     a {
                         font-size: 1em;
                     }
                 }
             }
-            .character {
-                @include character;
-                .character__presentation {
-                    width:map-get($width-percent, medium);
-                    img {
-                        width:60%;
+            .characters {
+                .characters__presentation {
+                    padding:0px 20px;
+                    a {
+                        h2 {
+                            font-size: 1.3em;
+                        }
                     }
+                }
+            }
+            .character {
+                flex-direction: column;
+                padding: 90px 40px;
+                height: auto;
+                box-sizing: border-box;
+                .character__presentation {
+                    width: 100%;
                     h2 {
                         font-size: 1.7em;
                     }
+
                 }
                 .character__description {
-                    padding-left: 0px;
-                    text-align: center;
-                    width:map-get($width-percent, medium);
+                    width:100%;
                     h3 {
                         font-size: 1em;
                     }
                 }
             }
-
-            .characters {
-                .character__presentation {
-                    a {
-                        img{}
-                        h2{
-                            font-size: 1.7em;
-                        }
-                    }
-                }    
-            }
-
-            .About {
-                @include about;
+            .about {
                 .about__section1 {
-                    @include about__section1;
+                    flex-direction: column;
+                    padding:90px 20px;
                     .about__title {
-                        width:map-get($width-percent, min);
+                        width:100%;
+                        text-align: center;
                         padding:0px;
                         h2 {
                             font-size: 1.7em;
                         }
                     }
                     .about__presentation {
-                        width:map-get($width-percent, min);
-                        margin-top:90px;
+                        width: 100%;
+                        box-sizing: border-box;
                         figure {
-                            width:map-get($width-percent, max);
                             img {
-                                width:map-get($width-percent, max);
-                                float:left;
+                                height: auto;
                             }
                         }
                     }
                 }
                 .about__section2 {
-                    @include about__section2;
+                    flex-direction: column;
                     .about__decoration1 {
-                        width: map-get($width-percent, max);
+                        width:100%;
                         img {
                             width:60%;
                             margin:auto;
                         }
                     }
-                    .about__text {
-                        padding:$padding-min;
-                        width:map-get($width-percent, min);
-                        margin:90px 0px;
-                        p {
-                            font-size: 1em;
+                    .about__presentation {
+                        width: 100%;
+                        margin:60px 0px;
+                        .about__presentation--text {
+                            width: 80%;
+                            p {
+                                font-size: 1em;
+                            }
                         }
                     }
                     .about__decoration2 {
-                        width: map-get($width-percent, max);
+                        width:100%;
                         img {
                             width:60%;
                             margin:auto;
@@ -114,35 +111,30 @@
                     }
                 }
                 .about__section3 {
-                    @include about__section3;
+                    flex-direction: column-reverse;
+                    padding:90px 20px;
                     .about__presentation {
-                        width:map-get($width-percent, min);
-                        margin-top: 90px;
+                        width:100%;
                         figure {
-                            width: map-get($width-percent, max);
                             img {
-                                width: map-get($width-percent, max);
-                                float:left;
+                                height: 141px;
                             }
                         }
                     }
                     .about__title {
-                        margin-left:$margin-min;
-                        text-align: center;
-                        width:map-get($width-percent, min);
+                        width:100%;
                         h2 {
                             font-size: 1.7em;
                         }
                     }
                 }
                 .about__section4 {
+                    flex-direction: column;
+                    padding:90px 0px;
                     .about__cards {
-                        flex-wrap:none;
-                        padding:$padding-min;
-                        width:map-get($width-percent, medium);
                         .about__card {
-                            width:map-get($width-percent, max);
-                            margin:$margin-min;
+                            width:100%;
+                            padding:40px 20px;
                             .about__card--title {
                                 h2 {
                                     font-size: 1.7em;
@@ -160,29 +152,21 @@
                     }
                 }
                 .about__section5 {
-                    @include about__section5(90px 20px, column-reverse);
-                   .about__title {
-                        width:map-get($width-percent, min);
-                        padding-right: $padding-min;
-                        margin:90px 0px 0px 0px;
+                    flex-direction: column-reverse;
+                    padding:90px 20px;
+                    .about__title {
+                        width:100%;
+                        margin-right: auto;
                         h2 {
                             font-size: 1.3em;
                         }
                     }
                     .about__image {
-                        border:none;
-                        img {
-                            width:map-get($width-percent, min);
-                            border:3px solid black;
-                        }
+                        width:100%;
                     }
                 }
             }
             .error404 {
-                width:map-get($width-percent, max);
-                height: $height-percent;
-                padding: 270px 0px;
-                box-sizing: border-box;
                 .error404__presentation {
                     h2 {
                         font-size: 1.7em;
@@ -198,28 +182,29 @@
     }
 }
 
-@media screen and (min-width: 380px) and (max-width: 723px){
+@media screen and (max-width: 480px) and (min-width: 321px){
     body {
-        @include body;
-        #header {
-            @include header;
-        }
         #content {
-            @include content;
             .content__presentation {
-                @include content__presentation;
+                height: auto;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding:90px 40px;
                 .content__presentation--img {
-                    padding: 20px;
-                    img {
-                        width:map-get($width-percent, medium);
-                    }
+                    width:100%;
+                    align-items: auto;
+                    padding:0px;
+                    box-sizing: border-box;
+                    margin:0px;
                 }
                 .content__presentation--text {
-                    padding:0px 40px;
+                    width:100%;
+                    padding:0px;
+                    margin:0px;
                     h2 {
                         font-size: 1.7em;
                     }
-                    p {
+                    p{
                         font-size: 1em;
                     }
                 }
@@ -229,121 +214,110 @@
                     }
                 }
             }
-            .character {
-                @include character;
-                .character__presentation {
-                    width:map-get($width-percent, medium);
-                    img {
-                        width: 60%;
+            .characters {
+                .characters__presentation {
+                    padding:0px 20px;
+                    a {
+                        h2 {
+                            font-size: 1.3em;
+                        }
                     }
+                }
+            }
+            .character {
+                flex-direction: column;
+                padding: 90px 60px;
+                height: auto;
+                box-sizing: border-box;
+                .character__presentation {
+                    width: 100%;
                     h2 {
                         font-size: 1.7em;
                     }
-                    
+
                 }
                 .character__description {
-                    padding-left: $padding-min;
+                    width:100%;
                     text-align: center;
-                    width:map-get($width-percent, medium);
                     h3 {
                         font-size: 1em;
                     }
                 }
             }
-
-            .characters {
-                .character__presentation {
-                    a {
-                        img{}
-                        h2{
-                            font-size: 1.7em;
-                        }
-                    }
-                }    
-            }
-
-            .About {
-                @include about;
+            .about {
                 .about__section1 {
-                    @include about__section1;
+                    flex-direction: column;
+                    padding:90px 40px;
                     .about__title {
-                        width: map-get($width-percent, medium);
-                        padding:$padding-min;
-                        margin:$margin-min;
+                        width:100%;
+                        text-align: center;
+                        padding:0px;
                         h2 {
                             font-size: 1.7em;
                         }
                     }
                     .about__presentation {
-                        width:map-get($width-percent, medium);
-                        margin-top:90px;
+                        width: 100%;
+                        box-sizing: border-box;
                         figure {
-                            width:map-get($width-percent, max);
                             img {
-                                width:map-get($width-percent, max);
-                                float:left;
+                                height: auto;
                             }
                         }
                     }
                 }
                 .about__section2 {
-                    @include about__section2;
+                    flex-direction: column;
                     .about__decoration1 {
-                        width:map-get($width-percent, max);
-                        display:block;
+                        width:100%;
                         img {
-                            width: 60%;
+                            margin:auto;
+                            width:70%;
                         }
                     }
-                    .about__text {
-                        padding:$padding-min;
-                        width:map-get($width-percent, medium);
-                        margin:90px 0px;
-                        p {
-                            font-size: 1em;
+                    .about__presentation {
+                        width: 100%;
+                        margin:60px 0px;
+                        .about__presentation--text {
+                            width: 80%;
+                            p {
+                                font-size: 1em;
+                            }
                         }
                     }
                     .about__decoration2 {
-                        display:block;
-                        width:map-get($width-percent, max);
+                        width:100%;
                         img {
-                            width:60%;
+                            margin:auto;
+                            width:70%;
                         }
                     }
                 }
                 .about__section3 {
-                    @include about__section3;
+                    flex-direction: column-reverse;
+                    padding:90px 40px;
                     .about__presentation {
-                        width:map-get($width-percent, medium);
-                        margin-top: 90px;
-                        border:none;
-                        box-sizing: border-box;
+                        width:100%;
                         figure {
-                            width:map-get($width-percent, max);
                             img {
-                                border: 3px solid black;
-                                box-sizing: border-box;
-                                width:map-get($width-percent, max);
-                                float:left;
+                                height: 154px;
                             }
                         }
                     }
                     .about__title {
-                        margin-left:$margin-min;
-                        text-align: center;
-                        width:map-get($width-percent, medium);
+                        width:100%;
                         h2 {
                             font-size: 1.7em;
                         }
                     }
                 }
                 .about__section4 {
+                    flex-direction: column;
+                    padding:90px 0px;
                     .about__cards {
-                        flex-wrap:none;
-                        padding:0px 45px;
                         .about__card {
-                            width:map-get($width-percent, max);
-                            margin:$margin-min;
+                            width:100%;
+                            padding:60px 40px;
                             .about__card--title {
                                 h2 {
                                     font-size: 1.7em;
@@ -361,31 +335,21 @@
                     }
                 }
                 .about__section5 {
-                    @include about__section5(90px 20px, column-reverse);
-
+                    flex-direction: column-reverse;
+                    padding:90px 40px;
                     .about__title {
-                        width:map-get($width-percent, medium);
-                        padding-right: $padding-min;
-                        margin:90px 0px 0px 0px;
+                        width:100%;
+                        margin-right: auto;
                         h2 {
                             font-size: 1.3em;
                         }
                     }
                     .about__image {
-                        border:none;
-                        img {
-                            width:map-get($width-percent, medium);
-                            border:3px solid black;
-                        }
+                        width:100%;
                     }
                 }
             }
-
             .error404 {
-                width:map-get($width-percent, max);
-                height: $height-percent;
-                padding: 270px 0px;
-                box-sizing: border-box;
                 .error404__presentation {
                     h2 {
                         font-size: 1.7em;
@@ -399,4 +363,5 @@
             }
         }
     }
+
 }

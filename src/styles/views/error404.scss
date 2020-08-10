@@ -4,7 +4,7 @@ body {
     #content {
         .error404 {
             width: map-get($width-percent, max);
-            padding: 270px 0px;
+            height: 100vh;
             @include background-color;
             display: flex;
             flex-direction: column;
