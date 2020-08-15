@@ -3,26 +3,29 @@
 @import '../variables/variables';
 
 body {
-    @include body;
+    @extend %body;
     #content {
         margin:$margin-min;
         padding:$padding-min;
+
+        //--------------------------------------------Section About---------------------------------------------//
+
         .about {
-            width: 100%;
+            width: map-get($width-percent, max);
             animation: fadeIn 2s ease-in;
             .about__section1 {
-                @include background-color;
-                display:flex;   
-                align-items: center;
+                @extend %background-color;
+                display:map-get($display, fx);   
+                align-items: map-get($paramether, cen);
                 padding:180px 90px;
-                box-sizing: border-box;
-                width:100%;
+                box-sizing:border-box;
+                width:map-get($width-percent, max);
                 .about__title {
                     padding: 90px 0px;
-                    width:50%;
+                    width:map-get($width-percent, medium-5);
                     h2 {
-                        font-size: map-get($font-size, max);
-                        color: white;
+                        font-size: map-get($font-size--title, max);
+                        color: map-get($color, whi);
                         font-family: $font-family;
                         font-weight: map-get($font-weight, max);
                     }
@@ -32,22 +35,22 @@ body {
                     border-radius: 3px;
                     margin:$margin-min;
                     padding:$padding-min;
-                    width:50%;
-                    border:3px solid black;
+                    width:map-get($width-percent, medium-5);
+                    @extend %border;
                     animation:movementImg 2s ease;
                     figure {
                         position: relative;
                         animation: 20s slider infinite;
-                        display:flex;
+                        display:map-get($display, fx);
                         margin: $margin-min;
                         padding:$padding-min;
-                        width:100%;
+                        width:map-get($width-percent, max);
                         img {
                             width:800px;
-                            max-width: 100%;
+                            max-width:map-get($width-percent, max);
                             float:left;
                             height:340px;
-                            max-height: 100%;
+                            max-height: map-get($width-percent, max);
                         }
                     }
                 }    
@@ -55,29 +58,29 @@ body {
 
             .about__section2 {
                 padding: 270px 0px;
-                display:flex;
-                margin:auto;
+                display:map-get($display, fx);
+                margin:map-get($paramether, mg-cen);
                 justify-content: space-around;
-                width:100%;
+                width:map-get($width-percent, max);
                 .about__decoration1 {
-                    justify-content:flex-end;
-                    display:flex;
-                    align-items: flex-start;
+                    justify-content:map-get($paramether, jcont-end);
+                    display:map-get($display, fx);
+                    align-items: map-get($paramether, jcont-start);
                     width:25%;
                     img {
                         width:400px;
-                        max-width: 100%;
+                        max-width:map-get($width-percent, max);
                     }
                 }
                 .about__presentation{
                     line-height: 40px;
-                    width:50%;
+                    width:map-get($width-percent, medium-5);
                     .about__presentation--text {
-                        width:60%;
-                        margin:auto;
-                        text-align: center;
+                        width:map-get($width-percent, medium-6);
+                        margin:map-get($paramether, mg-cen);
+                        text-align: map-get($paramether, mg-cen);
                         p {
-                            font-size: map-get($font-size, min);
+                            font-size: map-get($font-size--text, medium);
                             font-family: $font-family;
                             font-weight: map-get($font-weight, min);
                         }
@@ -85,32 +88,32 @@ body {
                     
                 }
                 .about__decoration2 {
-                    justify-content:flex-end;
-                    display:flex;
-                    align-items: flex-end;
+                    justify-content:map-get($paramether, jcont-end);
+                    display:map-get($display, fx);
+                    align-items: map-get($paramether, jcont-end);
                     width:25%;
                     img {
                         width:400px;
-                        max-width: 100%;
+                        max-width:map-get($width-percent, max);
                     }
                 }
             }
 
             .about__section3 {
-                display:flex;
-                text-align: center;
-                align-items: center;
+                display:map-get($display, fx);
+                text-align: map-get($paramether, cen);
+                align-items: map-get($paramether, cen);
                 padding:180px 90px;
-                box-sizing: border-box;
-                width:100%;
-                @include background-color;
+                box-sizing:border-box;
+                width:map-get($width-percent, max);
+                @extend %background-color;
                 .about__title {
-                    width: 50%;
+                    width:map-get($width-percent, medium-5);
                     h2 {
-                        font-size: map-get($font-size, max);
+                        font-size: map-get($font-size--title, max);
                         font-family: $font-family;
                         font-weight: map-get($font-weight, max);
-                        color:white;
+                        color:map-get($color, whi);
                     }
                 }
                 .about__presentation {
@@ -118,20 +121,20 @@ body {
                     border-radius: 3px;
                     margin:$margin-min;
                     padding:$padding-min;
-                    border:3px solid black;
-                    box-sizing: border-box;
-                    width:50%;
+                    @extend %border;
+                    box-sizing:border-box;
+                    width:map-get($width-percent, medium-5);
                     
                     figure {
                         position: relative;
                         width: map-get($width-percent, max);
                         animation: 20s slider infinite;
-                        display:flex;
+                        display:map-get($display, fx);
                         margin:$margin-min;
                         padding:$padding-min;
                         img {
                             width: 800px;
-                            max-width: 100%;
+                            max-width: map-get($width-percent, max);
                             float:left;
                             height:340px;
                             max-height: 100%;
@@ -142,27 +145,27 @@ body {
 
             .about__section4 {
                 padding:180px 0px;
-                width:100%;
+                width:map-get($width-percent, max);
                 .about__cards {
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
+                    display:map-get($display, fx);
+                    justify-content: map-get($paramether, cen);
+                    align-items: map-get($paramether, cen);
                     flex-wrap: wrap;
-                    margin:auto;
+                    margin:map-get($paramether, mg-cen);
                     .about__card {
                         width:25%;
                         padding: 90px 50px;
                         .about__card--title {
                             border:3px solid purple;
                             background-color: purple;
-                            color:white;
+                            color:map-get($color, whi);
                             border-radius: 3px;
-                            text-align: center;
+                            text-align: map-get($paramether, cen);
                             font-family: $font-family;
                             font-weight: map-get($font-weight,medium);
 
                             h2 {
-                                font-size: map-get($font-size, max);
+                                font-size: map-get($font-size--title, max);
                             }
                         }
                         .about__card--img {
@@ -179,11 +182,11 @@ body {
                             font-family: $font-family;
                             font-weight: map-get($font-weight, min);
                             p {
-                                font-size: map-get($font-size, extra-min);
+                                font-size: map-get($font-size--text, min);
             
                             }
                             span {
-                                font-size: map-get($font-size, extra-min);
+                                font-size: map-get($font-size--text, min);
                                 font-weight: map-get($font-weight, medium);
                                 a {
                                     color:purple;
@@ -197,37 +200,37 @@ body {
 
             .about__section5{
                 padding:90px;
-                display:flex;
+                display:map-get($display, fx);
                 width: map-get($width-percent, max);
-                margin:auto;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                @include background-color;
-                color: white;
-                box-sizing: border-box;
+                margin:map-get($paramether, mg-cen);
+                text-align: map-get($paramether, cen);
+                align-items: map-get($paramether, cen);
+                justify-content: map-get($paramether, cen);
+                @extend %background-color;
+                color: map-get($color, whi);
+                box-sizing:border-box;
                 .about__title {
                     line-height: 50px;
                     letter-spacing: 3px;
-                    width: 50%;
+                    width: map-get($width-percent, medium-5);
                     margin-right:120px;
                     
                     h2 {
-                        font-size: map-get($font-size, max);
+                        font-size: map-get($font-size--title, max);
                         font-family: $font-family;
                         font-weight: map-get($font-weight, max);
                         a {
-                            color:white;
+                            color:map-get($color, whi);
                             text-decoration: none;
                         }
                     }
                 }
                 .about__image {
-                    width:50%;
+                    width:map-get($width-percent, medium-5);
                     img {
                         width: 600px;
-                        max-width: 100%;
-                        @include border;   
+                        max-width: map-get($width-percent, max);
+                        @extend %border;   
                     }
                 }
             }

@@ -1,32 +1,35 @@
 @import '../variables/variables';
 
+//-----------------------------------------media queries both 769px to 1024px---------------------------------------//
+
+
 @media screen and (max-width: 1024px) and (min-width: 769px){
     body {
         #content {
             .content__presentation {
                 padding:0px 40px;
-                box-sizing: border-box;
+                box-sizing:border-box;
                 .content__presentation--img {
-                    width:50%;
-                    align-items: auto;
-                    padding:0px;
-                    box-sizing: border-box;
+                    width:map-get($width-percent,medium-5);
+                    align-items: map-get($paramether, mg-cen);
+                    padding:$padding-min;
+                    box-sizing:border-box;
                     margin-right:25px;
                 }
                 .content__presentation--text {
-                    width:50%;
-                    padding:0px;
+                    width:map-get($width-percent,medium-5);
+                    padding:$padding-min;
                     margin-left:25px;
                     h2 {
-                        font-size: 2em;
+                        font-size:map-get($font-size--title, medium);
                     }
                     p{
-                        font-size: 1.3em;
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
                 .links {
                     a {
-                        font-size: 1.3em;
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
             }
@@ -35,50 +38,50 @@
                     padding:0px 20px;
                     a {
                         h2 {
-                            font-size: 1.3em;
+                            font-size:map-get($font-size--text, medium);
                         }
                     }
                 }
             }
             .character {
                 padding: 90px 40px;
-                box-sizing: border-box;
+                box-sizing:border-box;
                 height:100vh;
                 .character__presentation {
-                    width: 100%;
+                    width: map-get($width-percent, max);
                     margin-right:25px;
                     h2 {
-                        font-size: 2em;
+                        font-size:map-get($font-size--title, medium);
                     }
 
                 }
                 .character__description {
-                    width:100%;
-                    text-align: center;
+                    width:map-get($width-percent, max);
+                    text-align: map-get($paramether, cen);
                     margin-left:25px;
                     h3 {
-                        font-size: 1.3em;
+                        font-size: map-get($font-size--text, medium);
                     }
                 }
             }
             .about {
                 .about__section1 {
                     .about__title {
-                        width:100%;
-                        text-align: center;
-                        padding:0px;
+                        width:map-get($width-percent, max);
+                        text-align: map-get($paramether, cen);
+                        padding:$padding-min;
                         margin-right:25px;
                         h2 {
-                            font-size: 2em;
+                            font-size:map-get($font-size--title, medium);
                         }
                     }
                     .about__presentation {
-                        width: 100%;
-                        box-sizing: border-box;
+                        width: map-get($width-percent, max);
+                        box-sizing:border-box;
                         margin-left:25px;
                         figure {
                             img {
-                                height: auto;
+                                height: map-get($paramether, mg-cen);
                             }
                         }
                     }
@@ -87,32 +90,32 @@
                     padding:180px 0px;
                     .about__decoration1 {
                         width:25%;
-                        align-items: flex-start;
+                        align-items: map-get($paramether, jcont-start);
                         img {
-                            margin:0;
+                            margin:$margin-min;
                         }
                     }
                     .about__presentation {
-                        width: 50%;
+                        width: map-get($width-percent,medium-5);
                         margin:70px 0px;
                         .about__presentation--text {
-                            width: 90%;
+                            width: map-get($width-percent,medium-9);
                             p {
-                                font-size: 1.3em;
+                                font-size:map-get($font-size--text, medium);
                             }
                         }
                     }
                     .about__decoration2 {
                         width:25%;
-                        align-items: flex-end;
+                        align-items: map-get($paramether, jcont-end);
                         img {
-                            margin:0;
+                            margin:$margin-min;
                         }
                     }
                 }
                 .about__section3 {
                     .about__presentation {
-                        width:100%;
+                        width:map-get($width-percent, max);
                         margin-right:25px;
                         figure {
                             img {
@@ -121,30 +124,30 @@
                         }
                     }
                     .about__title {
-                        width:100%;
+                        width:map-get($width-percent, max);
                         margin-left:25px;
                         h2 {
-                            font-size: 2em;
+                            font-size:map-get($font-size--title, medium);
                         }
                     }
                 }
                 .about__section4 {
-                    flex-direction: column;
+                    flex-direction: map-get($paramether, fx-col);
                     padding:90px 0px;
                     .about__cards {
                         .about__card {
-                            width:30%;
+                            width:map-get($width-percent,medium-3);
                             .about__card--title {
                                 h2 {
-                                    font-size: 2em;
+                                    font-size:map-get($font-size--title, medium);
                                 }
                             }
                             .about__card--text {
                                 p {
-                                    font-size: 1em;
+                                    font-size:map-get($font-size--text, min);
                                 }
                                 span {
-                                    font-size: 1em;
+                                    font-size:map-get($font-size--text, min);
                                 }
                             }
                         }
@@ -152,14 +155,14 @@
                 }
                 .about__section5 {
                     .about__title {
-                        width:50%;
+                        width:map-get($width-percent,medium-5);
                         margin-right:25px;
                         h2 {
-                            font-size: 2em;
+                            font-size:map-get($font-size--title, medium);
                         }
                     }
                     .about__image {
-                        width:50%;
+                        width:map-get($width-percent,medium-5);
                         margin-left:25px;
                     }
                 }
@@ -167,12 +170,12 @@
             .error404 {
                 .error404__presentation {
                     h2 {
-                        font-size: 2em;
+                        font-size:map-get($font-size--title, medium);
                     }
                 }
                 .error404__text {
                     p {
-                        font-size: 1.3m;
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
             } 

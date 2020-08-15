@@ -2,29 +2,32 @@
 
 body {
     #content {
+
+        //--------------------------------------------Section Error404---------------------------------------------//
+
         .error404 {
             width: map-get($width-percent, max);
             height: 100vh;
-            @include background-color;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box; 
+            @extend %background-color;
+            display: map-get($display, fx);
+            flex-direction: map-get($paramether, fx-col);
+            align-items: map-get($paramether, center);
+            justify-content: map-get($paramether, center);
+            box-sizing:border-box;
             .error404__presentation {
                 h2 {
-                    font-size: map-get($font-size, max);
+                    font-size: map-get($font-size--title, max);
                     font-family: $font-family;
                     font-weight: map-get($font-weight, max);
-                    color: white;
+                    color: map-get($color, whi);
                 }
             }
             .error404__text {
                 p {
-                    font-size: map-get($font-size, medium);
+                    font-size: map-get($font-size--text, max);
                     font-family: $font-family;
                     font-weight: map-get($font-weight, medium);
-                    color: white;
+                    color: map-get($color, whi);
                 }
             }
         }
