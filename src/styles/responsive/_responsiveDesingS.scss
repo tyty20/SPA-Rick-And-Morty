@@ -79,8 +79,10 @@
                         width: map-get($width-percent, max);
                         box-sizing:border-box;
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: map-get($paramether, mg-cen);
+                                width: map-get($width-percent, max);
                             }
                         }
                     }
@@ -118,8 +120,10 @@
                     .about__presentation {
                         width:map-get($width-percent, max);
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: 141px;
+                                width: map-get($width-percent, max);
                             }
                         }
                     }
@@ -265,8 +269,10 @@
                         width: map-get($width-percent, max);
                         box-sizing:border-box;
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: map-get($paramether, mg-cen);
+                                width: map-get($width-percent, max);
                             }
                         }
                     }
@@ -304,8 +310,10 @@
                     .about__presentation {
                         width:map-get($width-percent, max);
                         figure {
+                            width:map-get($width-percent, max);
                             img {
                                 height: 154px;
+                                width: map-get($width-percent, max);
                             }
                         }
                     }

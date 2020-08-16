@@ -3,54 +3,26 @@
 @import '../variables/variables';
 
 body {
-    @extend %body;
     #content {
-        margin:$margin-min;
-        padding:$padding-min;
-
         //--------------------------------------------Section About---------------------------------------------//
 
         .about {
             width: map-get($width-percent, max);
             animation: fadeIn 2s ease-in;
             .about__section1 {
-                @extend %background-color;
-                display:map-get($display, fx);   
-                align-items: map-get($paramether, cen);
-                padding:180px 90px;
-                box-sizing:border-box;
-                width:map-get($width-percent, max);
+                @extend %about__section1_3;
                 .about__title {
-                    padding: 90px 0px;
-                    width:map-get($width-percent, medium-5);
+                    @extend %about__title1_3;
                     h2 {
-                        font-size: map-get($font-size--title, max);
-                        color: map-get($color, whi);
-                        font-family: $font-family;
-                        font-weight: map-get($font-weight, max);
+                        @extend %about__title--h21_3;
                     }
                 }
                 .about__presentation {
-                    overflow:hidden;
-                    border-radius: 3px;
-                    margin:$margin-min;
-                    padding:$padding-min;
-                    width:map-get($width-percent, medium-5);
-                    @extend %border;
-                    animation:movementImg 2s ease;
+                    @extend %about__presentation1_3;
                     figure {
-                        position: relative;
-                        animation: 20s slider infinite;
-                        display:map-get($display, fx);
-                        margin: $margin-min;
-                        padding:$padding-min;
-                        width:map-get($width-percent, max);
+                        @extend %about__presentation--figure1_3;
                         img {
-                            width:800px;
-                            max-width:map-get($width-percent, max);
-                            float:left;
-                            height:340px;
-                            max-height: map-get($width-percent, max);
+                            @extend %about__presentation--img1_3;
                         }
                     }
                 }    
@@ -100,44 +72,19 @@ body {
             }
 
             .about__section3 {
-                display:map-get($display, fx);
-                text-align: map-get($paramether, cen);
-                align-items: map-get($paramether, cen);
-                padding:180px 90px;
-                box-sizing:border-box;
-                width:map-get($width-percent, max);
-                @extend %background-color;
+                @extend %about__section1_3;
                 .about__title {
-                    width:map-get($width-percent, medium-5);
+                    @extend %about__title1_3;
                     h2 {
-                        font-size: map-get($font-size--title, max);
-                        font-family: $font-family;
-                        font-weight: map-get($font-weight, max);
-                        color:map-get($color, whi);
+                        @extend %about__title--h21_3;
                     }
                 }
                 .about__presentation {
-                    overflow:hidden;
-                    border-radius: 3px;
-                    margin:$margin-min;
-                    padding:$padding-min;
-                    @extend %border;
-                    box-sizing:border-box;
-                    width:map-get($width-percent, medium-5);
-                    
+                    @extend %about__presentation1_3;
                     figure {
-                        position: relative;
-                        width: map-get($width-percent, max);
-                        animation: 20s slider infinite;
-                        display:map-get($display, fx);
-                        margin:$margin-min;
-                        padding:$padding-min;
+                        @extend %about__presentation--figure1_3;
                         img {
-                            width: 800px;
-                            max-width: map-get($width-percent, max);
-                            float:left;
-                            height:340px;
-                            max-height: 100%;
+                            @extend %about__presentation--img1_3;
                         }
                     }
                 }    

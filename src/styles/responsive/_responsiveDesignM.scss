@@ -13,7 +13,7 @@
                 padding:90px 60px;
                 .content__presentation--img {
                     width:map-get($width-percent, max);
-                    align-items: map-get($paramether, mg-cen);
+                    align-items: map-get($paramether,cen);
                     padding:$padding-min;
                     box-sizing:border-box;
                     margin:$margin-min;
@@ -81,8 +81,10 @@
                         width:map-get($width-percent, max);
                         box-sizing:border-box;
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: map-get($paramether, mg-cen);
+                                width: map-get($width-percent, max);
                             }
                         }
                     }
@@ -92,7 +94,7 @@
                     .about__decoration1 {
                         width:map-get($width-percent, max);
                         img {
-                            margin: map-get($paramether, cen);
+                            margin: map-get($paramether, mg-cen);
                         }
                     }
                     .about__presentation {
@@ -118,8 +120,10 @@
                     .about__presentation {
                         width:map-get($width-percent, max);
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: 178px;
+                                width: map-get($width-percent, max);
                             }
                         }
                     }

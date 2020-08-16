@@ -95,3 +95,52 @@ $color:(
 %border {
     border: 3px solid black;
 }
+
+%about__section1_3 {
+    display:map-get($display, fx);
+    text-align: map-get($paramether, cen);
+    align-items: map-get($paramether, cen);
+    padding:180px 90px;
+    box-sizing:border-box;
+    width:map-get($width-percent, max);
+    @extend %background-color;
+}
+
+%about__title1_3 {
+    padding: 90px 0px;
+    width:map-get($width-percent, medium-5);
+}
+
+%about__title--h21_3 {
+    font-size: map-get($font-size--title, max);
+    color: map-get($color, whi);
+    font-family: $font-family;
+    font-weight: map-get($font-weight, max);
+}
+
+%about__presentation1_3 {
+    overflow:hidden;
+    border-radius: 3px;
+    margin:$margin-min;
+    padding:$padding-min;
+    width:map-get($width-percent, medium-5);
+    @extend %border;
+
+}
+
+%about__presentation--figure1_3 {
+    position: relative;
+    animation: 20s slider infinite;
+    display:map-get($display, fx);
+    margin: $margin-min;
+    padding:$padding-min;
+    width:map-get($width-percent, max);
+}
+
+%about__presentation--img1_3 {
+    width:800px;
+    max-width:map-get($width-percent, max);
+    float:left;
+    height:340px;
+    max-height: map-get($width-percent, max);
+}

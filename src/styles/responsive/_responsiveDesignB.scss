@@ -11,7 +11,7 @@
                 box-sizing:border-box;
                 .content__presentation--img {
                     width:map-get($width-percent,medium-5);
-                    align-items: map-get($paramether, mg-cen);
+                    align-items: map-get($paramether, cen);
                     padding:$padding-min;
                     box-sizing:border-box;
                     margin-right:25px;
@@ -80,8 +80,10 @@
                         box-sizing:border-box;
                         margin-left:25px;
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: map-get($paramether, mg-cen);
+                                width: map-get($width-percent, max);
                             }
                         }
                     }
@@ -118,8 +120,10 @@
                         width:map-get($width-percent, max);
                         margin-right:25px;
                         figure {
+                            width: map-get($width-percent, max);
                             img {
                                 height: 150px;
+                                width: map-get($width-percent, max);
                             }
                         }
                     }

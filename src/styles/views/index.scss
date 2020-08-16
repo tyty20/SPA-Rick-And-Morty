@@ -1,7 +1,7 @@
 @import '../variables/variables';
 
 body {
-
+    @extend %body;
     //--------------------------------------------Section Index---------------------------------------------//
 
     #header {
@@ -46,6 +46,8 @@ body {
     #content {
         width:map-get($width-percent, max);
         height: 100%;
+        margin:$margin-min;
+        padding:$padding-min;
         .content__presentation {
             height:100vh;
             display:map-get($display, fx);
