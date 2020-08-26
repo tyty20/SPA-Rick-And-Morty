@@ -83,7 +83,7 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: map-get($paramether, mg-cen);
+                                height: 85%;
                                 width: map-get($width-percent, max);
                             }
                         }
@@ -122,13 +122,14 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: 178px;
+                                height: 85%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
                     .about__title {
                         width:map-get($width-percent, max);
+                        padding:0px;
                         h2 {
                             font-size:map-get($font-size--title, medium);
                         }

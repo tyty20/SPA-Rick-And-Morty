@@ -141,6 +141,6 @@ $color:(
     width:800px;
     max-width:map-get($width-percent, max);
     float:left;
-    height:340px;
+    max-height:250px;
     max-height: map-get($width-percent, max);
 }

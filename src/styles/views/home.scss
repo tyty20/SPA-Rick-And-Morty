@@ -23,6 +23,7 @@ body {
                     text-decoration: none;
                     color:map-get($color, whi);
                     transition: ease-out 0.2s;
+                    display:block;
                     img {
                         width: 300px;
                         border-radius: 50px;
@@ -40,7 +41,7 @@ body {
                 }
                 a:hover {
                     opacity:1;
-                    padding:20px;
+                    transform:scale(1.1);
                     img {
                         opacity:1;   
                     }

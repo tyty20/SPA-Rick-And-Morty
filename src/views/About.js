@@ -41,10 +41,10 @@ const About = () => {
                 <div class="about__presentation">
                     <figure>
                         <img src=${images.samuraijack} alt="Samurai Jack">
-                        <img src=${images.aquateenforce} alt="Aqua Teen Force">
+                        <img src=${images.spaceghost2} alt="Aqua Teen Force">
                         <img src=${images.samuraijack2} alt="Samurai Jack">
                         <img src=${images.spaceghost2} alt="Space Ghost">
-                        <img src=${images.aquateenforce} alt="Aqua Teen Force">
+                        <img src=${images.samuraijack2} alt="Aqua Teen Force">
                     </figure>
                 </div>
                 <div class="about__title">
@@ -56,7 +56,10 @@ const About = () => {
                 <div class="about__cards">
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2>AquaTeen Force</h2>
+                            <h2>
+                                AquaTeen
+                                Force
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.aquateenforce} alt="Aqua Teen Force">
@@ -69,7 +72,10 @@ const About = () => {
 
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2> Samurai Jack</h2>
+                            <h2>
+                                Samurai
+                                Jack
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.samuraijack} alt="Samurai Jack">
@@ -82,7 +88,9 @@ const About = () => {
 
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2>Space Ghost</h2>
+                            <h2>
+                                Space Ghost
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.spaceghost} alt="Space Ghost">
@@ -95,7 +103,9 @@ const About = () => {
 
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2>Family Guy</h2>
+                            <h2>
+                                Family Guy
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.familyguy} alt="Family Guy">
@@ -108,7 +118,9 @@ const About = () => {
                 
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2>The Brak Show </h2>
+                            <h2>
+                                The Brak Show
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.thebrakshow} alt ="The Brak Show">
@@ -121,7 +133,10 @@ const About = () => {
 
                     <div class="about__card">
                         <div class="about__card--title">
-                            <h2>Bob's Burgers</h2>
+                            <h2>
+                                Bob's 
+                                Burgers
+                            </h2>
                         </div>
                         <div class="about__card--img">
                             <img src=${images.bobburgers} alt="Bob's Burgers">

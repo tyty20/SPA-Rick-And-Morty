@@ -82,7 +82,7 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: map-get($paramether, mg-cen);
+                                height:90%;
                                 width: map-get($width-percent, max);
                             }
                         }
@@ -119,10 +119,11 @@
                     .about__presentation {
                         width:map-get($width-percent, max);
                         margin-right:25px;
+                        box-sizing:border-box;
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: 150px;
+                                height:90%;
                                 width: map-get($width-percent, max);
                             }
                         }
@@ -130,6 +131,8 @@
                     .about__title {
                         width:map-get($width-percent, max);
                         margin-left:25px;
+                        padding:$padding-min;
+                        text-align: center;
                         h2 {
                             font-size:map-get($font-size--title, medium);
                         }
@@ -140,7 +143,7 @@
                     padding:90px 0px;
                     .about__cards {
                         .about__card {
-                            width:map-get($width-percent,medium-3);
+                            width:35%;
                             .about__card--title {
                                 h2 {
                                     font-size:map-get($font-size--title, medium);

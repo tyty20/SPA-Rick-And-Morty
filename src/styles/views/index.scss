@@ -3,7 +3,13 @@
 body {
     @extend %body;
     //--------------------------------------------Section Index---------------------------------------------//
-
+    &::-webkit-scrollbar {
+        width:8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #CB06A9;
+        border-radius: 5px;
+    }
     #header {
         @extend %header;
         background-color: #0B2947;
@@ -99,4 +105,5 @@ body {
             }
         } 
     }
+    
 }

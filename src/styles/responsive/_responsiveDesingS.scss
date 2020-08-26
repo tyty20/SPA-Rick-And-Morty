@@ -81,7 +81,7 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: map-get($paramether, mg-cen);
+                                height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
@@ -122,13 +122,14 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: 141px;
+                                height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
                     .about__title {
                         width:map-get($width-percent, max);
+                        padding:0px;
                         h2 {
                             font-size: map-get($font-size--title, min)
                         }
@@ -259,7 +260,7 @@
                     padding:90px 40px;
                     .about__title {
                         width:map-get($width-percent, max);
-                        text-align:  map-get($paramether, cen);
+                        text-align:map-get($paramether, cen);
                         padding:$padding-min;
                         h2 {
                             font-size:map-get($font-size--title, min);
@@ -271,7 +272,7 @@
                         figure {
                             width: map-get($width-percent, max);
                             img {
-                                height: map-get($paramether, mg-cen);
+                                height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
@@ -312,13 +313,14 @@
                         figure {
                             width:map-get($width-percent, max);
                             img {
-                                height: 154px;
+                                height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
                     .about__title {
                         width:map-get($width-percent, max);
+                        padding:0px;
                         h2 {
                             font-size:map-get($font-size--title, min);
                         }
