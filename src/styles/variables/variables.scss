@@ -143,4 +143,5 @@ $color:(
     float:left;
     max-height:250px;
     max-height: map-get($width-percent, max);
+    flex-shrink: 0;
 }
