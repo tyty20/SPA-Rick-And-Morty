@@ -19,9 +19,9 @@ body {
                 h2 {
                     @extend %header__h2;
                 }
-            }
-            a:hover {
-                color:map-get($color, gre);
+                &:hover {
+                    color:map-get($color, gre);
+                }
             }
         }
 
@@ -31,9 +31,9 @@ body {
                 h2 {
                     @extend %header__h2;      
                 }
-            }
-            a:hover {
-                color:map-get($color, gre);
+                &:hover {
+                    color:map-get($color, gre);
+                }
             }
         }
 
@@ -43,9 +43,10 @@ body {
                 h2 {
                     @extend %header__h2;
                 }
-            }
-            a:hover {
-                color:map-get($color, gre);
+                &:hover {
+                    color:map-get($color, gre);
+
+                }
             }
         }
     }
@@ -91,14 +92,21 @@ body {
                 .links {
                     padding-top:40px;
                     box-sizing:border-box;
+                    display:flex;
                     a {
                         font-size: map-get($font-size--text, medium); 
                         text-decoration: none;
                         color: #a4508b;
                         margin-right: 20px;
+                        &:hover {
+                            animation: textDecoration 8s ease;
+                        }
                         i {
                             font-size: map-get($font-size--text, max);
                             color:map-get($color, whi);
+                            &:hover {
+                                color:purple;
+                            }
                         }
                     }
                 }

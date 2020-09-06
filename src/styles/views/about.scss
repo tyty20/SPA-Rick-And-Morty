@@ -8,19 +8,26 @@ body {
 
         .about {
             width: map-get($width-percent, max);
-            animation: fadeIn 2s ease-in;
             .about__section1 {
                 @extend %about__section1_3;
                 .about__title {
                     @extend %about__title1_3;
+                    
                     h2 {
                         @extend %about__title--h21_3;
                     }
                 }
                 .about__presentation {
                     @extend %about__presentation1_3;
+                    max-width: 800px;
+                    animation: movementLeft 2s ease;
+                    box-sizing: border-box;
+                    cursor:pointer;
+                    /* animation: images 2s ease;
+                    animation-timing-function: steps(60); */
                     figure {
                         @extend %about__presentation--figure1_3;
+
                         img {
                             @extend %about__presentation--img1_3;
                         }
@@ -81,6 +88,8 @@ body {
                 }
                 .about__presentation {
                     @extend %about__presentation1_3;
+                    max-width: 800px;
+                    cursor:pointer;
                     figure {
                         @extend %about__presentation--figure1_3;
                         img {
@@ -130,7 +139,6 @@ body {
                             font-weight: map-get($font-weight, min);
                             p {
                                 font-size: map-get($font-size--text, min);
-            
                             }
                             span {
                                 font-size: map-get($font-size--text, min);
@@ -138,6 +146,9 @@ body {
                                 a {
                                     color:purple;
                                     text-decoration: none;
+                                    &:hover {
+                                        color: violet;
+                                    }
                                 }
                             }
                         }

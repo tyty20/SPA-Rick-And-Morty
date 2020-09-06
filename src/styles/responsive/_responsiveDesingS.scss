@@ -4,6 +4,13 @@
 
 @media screen and (max-width: 320px) and (min-width:0px){
     body {
+        &::-webkit-scrollbar {
+            width:8px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #CB06A9;
+            border-radius: 5px;
+        }
         #content {
             .content__presentation {
                 height: map-get($paramether, mg-cen);

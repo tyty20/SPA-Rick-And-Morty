@@ -5,23 +5,23 @@ const About = () => {
         
         <div class="about">
 
-            <div class="about__section1">
-                <div class="about__title">
+            <div class="about__section1" id="about__section1">
+                <div class="about__title" id="about__title">
                     <h2>Que es Rick And Morty?</h2>
                 </div>
-                <div class="about__presentation">
+                <div class="about__presentation" id="about__presentation">
                     <figure>
-                        <img src=${images.rickandmorty1} alt="rick And Morty 1">
-                        <img src=${images.rickandmorty2} alt="Rick And Morty 2">
-                        <img src=${images.rickandmorty3} alt="Rick And Morty 3">
-                        <img src=${images.rickandmorty1} alt="Rick And Morty 4">
-                        <img src=${images.rickandmorty2} alt="Rick And Morty 5">
+                        <img src=${images.rickandmorty1} name="Rick And Morty" alt="Rick And Morty 1">
+                        <img src=${images.rickandmorty2} name="Rick And Morty" alt="Rick And Morty 2">
+                        <img src=${images.rickandmorty3} name="Rick And Morty" alt="Rick And Morty 3">
+                        <img src=${images.rickandmorty1} name="Rick And Morty" alt="Rick And Morty 4">
+                        <img src=${images.rickandmorty2} name="Rick And Morty" alt="Rick And Morty 5">
                     </figure>
                 </div>
             </div>
 
             <div class="about__section2">
-                <div class="about__decoration1" >
+                <div class="about__decoration1">
                     <img src=${images.rickandmortyfondo1} id="image1" alt="Rick And Morty">
                 </div>
                 <div class="about__presentation">
@@ -37,17 +37,17 @@ const About = () => {
                 </div>
             </div>
 
-            <div class="about__section3">
-                <div class="about__presentation">
+            <div class="about__section3" id="about__section3">
+                <div class="about__presentation" id="about__presentation3">
                     <figure>
-                        <img src=${images.samuraijack} alt="Samurai Jack">
-                        <img src=${images.spaceghost2} alt="Aqua Teen Force">
-                        <img src=${images.samuraijack2} alt="Samurai Jack">
-                        <img src=${images.spaceghost2} alt="Space Ghost">
-                        <img src=${images.samuraijack2} alt="Aqua Teen Force">
+                        <img src=${images.samuraijack} name="Adult Swim" alt="Samurai Jack">
+                        <img src=${images.spaceghost2} name="Adult Swim" alt="Aqua Teen Force">
+                        <img src=${images.samuraijack2} name="Adult Swim" alt="Samurai Jack">
+                        <img src=${images.spaceghost2} name="Adult Swim" alt="Space Ghost">
+                        <img src=${images.samuraijack2} name="Adult Swim" alt="Aqua Teen Force">
                     </figure>
                 </div>
-                <div class="about__title">
+                <div class="about__title" id="about__title3">
                     <h2>Otros programas que emite Adult Swim.</h2>
                 </div>
             </div>

@@ -14,6 +14,8 @@ body {
             align-items: map-get($paramether, center);
             justify-content: map-get($paramether, center);
             box-sizing:border-box;
+            align-items: center;
+            justify-content: center;
             .error404__presentation {
                 h2 {
                     font-size: map-get($font-size--title, max);

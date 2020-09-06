@@ -1,3 +1,7 @@
+//import the folder with styles for events
+
+import others from './styles/others/imageZoom.scss'
+
 //Import the file with variables of Sass
 
 import variables from './styles/variables/variables.scss'
@@ -9,6 +13,14 @@ import {images} from '../assets/media/images'
 //import the folder 'animations' of extension Sass
 
 import animations from './styles/animations/animations.scss'
+
+//Import the function 'imageZoom' for images
+
+import imageZoom from './events/imageZoom'
+
+//Import the function for handle the resize of about
+
+import windowResize from './events/windowResize'
 
 //import the function for 'observer' elements in the document
 
@@ -42,3 +54,29 @@ window.addEventListener('hashchange', () => {
         observer.observe(image2)
     }
 })
+
+//Event for zoom to the images
+
+window.addEventListener('click', e => {
+    if(window.location.hash === '#/about' && window.innerWidth > 1023){
+        imageZoom(e)
+    }
+    else {
+       false;
+    }
+})
+
+//Event for change to the images and return own size
+
+window.addEventListener('resize', (e) => {
+    let screen = e.currentTarget.screen.width
+    if(window.location.hash === '#/about' && screen < 1023){
+        windowResize()
+    }
+    else {
+        false;
+    }
+})
+ 
+
+

@@ -7,7 +7,6 @@ body {
         //--------------------------------------------Section Home---------------------------------------------//
 
         .characters {
-            animation: fadeIn 2s forwards;
             @extend %background-color;
             box-sizing:border-box;
             display:map-get($display, fx);
@@ -38,17 +37,18 @@ body {
                         font-family: $font-family;
                         opacity:0.5; 
                     }
-                }
-                a:hover {
-                    opacity:1;
-                    transform:scale(1.1);
-                    img {
-                        opacity:1;   
-                    }
-                    h2 {
+                    &:hover {
                         opacity:1;
+                        transform:scale(1.1);
+                        img {
+                            opacity:1;   
+                        }
+                        h2 {
+                            opacity:1;
+                        }   
                     }
                 }
+                
             }
         }
     }
