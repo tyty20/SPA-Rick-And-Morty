@@ -1,8 +1,8 @@
-@import '../variables/variables';
+@import '../variables/_variables';
 
 //-----------------------------------------media queries both 0px to 320px---------------------------------------//
 
-@media screen and (max-width: 320px) and (min-width:0px){
+@include phone-min{
     body {
         &::-webkit-scrollbar {
             width:8px;
@@ -199,7 +199,7 @@
 //-----------------------------------------media queries both 321px to 480px---------------------------------------//
 
 
-@media screen and (max-width: 480px) and (min-width: 321px){
+@include phone-max{
     body {
         #content {
             .content__presentation {

@@ -3,7 +3,7 @@
 //-----------------------------------------media queries both 481px to 768px---------------------------------------//
 
 
-@media screen and (max-width: 768px) and (min-width:481px){
+@include tablet{
     body {
         #content {
             .content__presentation {

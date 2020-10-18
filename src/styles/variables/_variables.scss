@@ -39,6 +39,16 @@ $font-size--text: (
     max:1.7em,
 );
 
+$font-size--px: (
+    min: 10px,
+    min+1: 11px,
+    min+2:12px,
+    medium:13px,
+    medium+1:14px,
+    medium+2:15px,
+    max:16px,
+);
+
 $display:(
     fx: flex,
 );
@@ -55,6 +65,41 @@ $color:(
     whi:white,
     gre: grey,
 );
+
+//Breakpoint media queries
+
+$phone-width-min: 320px;
+$phone-width-medium: 480px;
+$phone-width-max:768px;
+$tablet-width: 1024px;
+
+
+//Mixins media queries
+
+@mixin phone-min {
+    @media screen and  (max-width:$phone-width-min) and (min-width:0px){
+        @content;
+    }
+};
+
+@mixin phone-max {
+    @media screen and (max-width:$phone-width-medium) and (min-width:$phone-width-min){
+        @content;
+    }
+};
+
+@mixin tablet {
+    @media screen and (max-width:$phone-width-max) and (min-width:$phone-width-medium){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width:$tablet-width) and (min-width:$phone-width-max){
+        @content;
+    }
+}
+
 
 %background-color {
     background-color: #a4508b;
@@ -73,6 +118,21 @@ $color:(
     height:$height-percent;
     display:map-get($display, fx);
     justify-content: space-evenly;
+}
+
+%header_responsive {
+    @include phone-min {
+        font-size: map-get($font-size--px, min);
+    }
+    @include phone-max {
+        font-size: map-get($font-size--px, min+1);
+    }
+    @include tablet {
+        font-size: map-get($font-size--px, medium);
+    }
+    @include desktop {
+        font-size: map-get($font-size--px, medium+1);
+    }
 }
 
 %header__a {
@@ -145,3 +205,4 @@ $color:(
     max-height: map-get($width-percent, max);
     flex-shrink: 0;
 }
+

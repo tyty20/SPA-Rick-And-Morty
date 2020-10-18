@@ -3,7 +3,7 @@
 //-----------------------------------------media queries both 769px to 1024px---------------------------------------//
 
 
-@media screen and (max-width: 1024px) and (min-width: 769px){
+@include desktop{
     body {
         #content {
             .content__presentation {
