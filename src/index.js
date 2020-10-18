@@ -1,10 +1,10 @@
 //import the folder with styles for events
 
-import others from './styles/others/imageZoom.scss'
+import others from './styles/others/_imageZoom.scss'
 
 //Import the file with variables of Sass
 
-import variables from './styles/variables/variables.scss'
+import variables from './styles/variables/_variables.scss'
 
 //Import the folder with the images of project
 
@@ -12,7 +12,7 @@ import {images} from '../assets/media/images'
 
 //import the folder 'animations' of extension Sass
 
-import animations from './styles/animations/animations.scss'
+import animations from './styles/animations/_animations.scss'
 
 //Import the function 'imageZoom' for images
 
@@ -36,7 +36,7 @@ import sass from './styles/views/main.scss'
 
 //import the folder 'responsive' of extension Sass
 
-import responsive from './styles/responsive/mainResponsive.scss'
+import responsive from './styles/responsive/_mainResponsive.scss'
 
 //Event for navegation to routes
 
