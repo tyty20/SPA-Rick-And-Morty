@@ -11,8 +11,8 @@ const Presentation = () => {
                 </p>
                 <div class="links">
                     <a target="blank" href="https://www.instagram.com/juli.carelli_/"><i class="icon fab fa-instagram"></i></a>
-                    <a target="blank" href="https://github.com/tyty20?tab=repositories"><i class="icon fab fa-github"></i></a>
-                    <a target="blank" href="https://www.linkedin.com/in/julian-ignacio-carelli-8a85b9192/"><i class="icon fab fa-linkedin"></i></a>
+                    <a target="blank" href="https://github.com/Julian-Carelli"><i class="icon fab fa-github"></i></a>
+                    <a target="blank" href="https://www.linkedin.com/in/julian-carelli/"><i class="icon fab fa-linkedin"></i></a>
                 </div> 
             </div>
     </div>
