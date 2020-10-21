@@ -1,9 +1,9 @@
 const API = 'https://rickandmortyapi.com/api/character/'
 
 const getData = async (id) => {
-    const apiUrl = id ? `${API}${id}`: API
-    const resolve = await fetch(apiUrl);
     try {
+        const apiUrl = id ? `${API}${id}`: API
+        const resolve = await fetch(apiUrl);
         const data = resolve.json();
         return data;
     }
@@ -12,4 +12,4 @@ const getData = async (id) => {
     }
 }
 
-export {getData}
+export default getData;

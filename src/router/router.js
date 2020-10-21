@@ -1,10 +1,10 @@
 import {pages} from '../views/index'
-import {getUrl} from '../utils/getUrl'
+import getUrl from '../utils/getUrl'
 
 const content= document.getElementById('content')
 
 const router = async (routes) => {
-    const url = getUrl();
+    const URL = getUrl();
     content.innerHTML = '';
     switch(routes){
         case '#/inicio': {
@@ -16,7 +16,7 @@ const router = async (routes) => {
         case '#/about': {
             return content.innerHTML = await pages.about()
         }
-        case `${url}`:{
+        case `${URL}`:{
             return content.innerHTML = await pages.character()
         }
         default:{

@@ -1,7 +1,7 @@
 @import '../variables/_variables';
 
 body {
-    #content {
+    .content {
 
         //--------------------------------------------Section Error404---------------------------------------------//
 
@@ -16,16 +16,18 @@ body {
             box-sizing:border-box;
             align-items: center;
             justify-content: center;
-            .error404__presentation {
-                h2 {
+            &__presentation {
+                font-size: map-get($font-size--px, max);
+                .error404__title {
                     font-size: map-get($font-size--title, max);
                     font-family: $font-family;
                     font-weight: map-get($font-weight, max);
                     color: map-get($color, whi);
                 }
             }
-            .error404__text {
-                p {
+            &__info {
+                font-size: map-get($font-size--px, max);
+                .error404__text {
                     font-size: map-get($font-size--text, max);
                     font-family: $font-family;
                     font-weight: map-get($font-weight, medium);
