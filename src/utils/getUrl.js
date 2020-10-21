@@ -9,4 +9,4 @@ const getUrl = () => {
     }
 }
 
-export {getUrl}
+export default getUrl

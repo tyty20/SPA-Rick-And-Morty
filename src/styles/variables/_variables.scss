@@ -70,7 +70,7 @@ $color:(
 
 $phone-width-min: 320px;
 $phone-width-medium: 480px;
-$phone-width-max:768px;
+$phone-width-max:769px;
 $tablet-width: 1024px;
 
 
@@ -118,20 +118,22 @@ $tablet-width: 1024px;
     height:$height-percent;
     display:map-get($display, fx);
     justify-content: space-evenly;
+    align-items: center;
 }
 
 %header_responsive {
-    @include phone-min {
+    @include phone-min{
         font-size: map-get($font-size--px, min);
     }
     @include phone-max {
-        font-size: map-get($font-size--px, min+1);
+        font-size:map-get($font-size--px, min+2)
+
     }
     @include tablet {
-        font-size: map-get($font-size--px, medium);
+        font-size:map-get($font-size--px, medium+1)
     }
     @include desktop {
-        font-size: map-get($font-size--px, medium+1);
+        font-size:map-get($font-size--px, medium+2)
     }
 }
 
@@ -142,7 +144,7 @@ $tablet-width: 1024px;
 }
 
 %header__h2 {
-    font-size: map-get($font-size--text, medium);
+    font-size: map-get($font-size--text, min);
     font-weight: map-get($font-weight, min);
     font-family: $font-family;
 }

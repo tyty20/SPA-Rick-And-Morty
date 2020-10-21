@@ -3,21 +3,21 @@
 @import '../variables/_variables';
 
 body {
-    #content {
+    .content {
         //--------------------------------------------Section About---------------------------------------------//
 
         .about {
             width: map-get($width-percent, max);
-            .about__section1 {
+            .about-section1 {
                 @extend %about__section1_3;
-                .about__title {
+                &__name {
                     @extend %about__title1_3;
                     
-                    h2 {
+                    .about-section1__title {
                         @extend %about__title--h21_3;
                     }
                 }
-                .about__presentation {
+                &__presentation {
                     @extend %about__presentation1_3;
                     max-width: 800px;
                     animation: movementLeft 2s ease;
@@ -25,40 +25,40 @@ body {
                     cursor:pointer;
                     /* animation: images 2s ease;
                     animation-timing-function: steps(60); */
-                    figure {
+                    .about-section1__figure {
                         @extend %about__presentation--figure1_3;
 
-                        img {
+                        .about-section1__img {
                             @extend %about__presentation--img1_3;
                         }
                     }
                 }    
             }
 
-            .about__section2 {
+            .about-section2 {
                 padding: 270px 0px;
                 display:map-get($display, fx);
                 margin:map-get($paramether, mg-cen);
                 justify-content: space-around;
                 width:map-get($width-percent, max);
-                .about__decoration1 {
+                &__decoration1 {
                     justify-content:map-get($paramether, jcont-end);
                     display:map-get($display, fx);
                     align-items: map-get($paramether, jcont-start);
                     width:25%;
-                    img {
+                    .about-section2__img {
                         width:400px;
                         max-width:map-get($width-percent, max);
                     }
                 }
-                .about__presentation{
+                &__presentation{
                     line-height: 40px;
                     width:map-get($width-percent, medium-5);
-                    .about__presentation--text {
+                    .about-section2__info {
                         width:map-get($width-percent, medium-6);
                         margin:map-get($paramether, mg-cen);
                         text-align: map-get($paramether, mg-cen);
-                        p {
+                        .about-section2__text{
                             font-size: map-get($font-size--text, medium);
                             font-family: $font-family;
                             font-weight: map-get($font-weight, min);
@@ -66,52 +66,56 @@ body {
                     }
                     
                 }
-                .about__decoration2 {
+                &__decoration2 {
                     justify-content:map-get($paramether, jcont-end);
                     display:map-get($display, fx);
                     align-items: map-get($paramether, jcont-end);
                     width:25%;
-                    img {
+                    .about-section2__img {
                         width:400px;
                         max-width:map-get($width-percent, max);
                     }
                 }
             }
 
-            .about__section3 {
+            .about-section3 {
                 @extend %about__section1_3;
-                .about__title {
+                &__name {
                     @extend %about__title1_3;
-                    h2 {
+                    .about-section3__title {
                         @extend %about__title--h21_3;
                     }
                 }
-                .about__presentation {
+                &__presentation {
                     @extend %about__presentation1_3;
                     max-width: 800px;
                     cursor:pointer;
-                    figure {
+                    .about-section3__figure {
                         @extend %about__presentation--figure1_3;
-                        img {
+                        .about-section3__img {
                             @extend %about__presentation--img1_3;
                         }
                     }
                 }    
             }
 
-            .about__section4 {
+            .about-section4 {
                 padding:180px 0px;
                 width:map-get($width-percent, max);
-                .about__cards {
+                &__cards {
                     display:map-get($display, fx);
                     justify-content: map-get($paramether, cen);
                     align-items: map-get($paramether, cen);
                     flex-wrap: wrap;
                     margin:map-get($paramether, mg-cen);
-                    .about__card {
+                    .about-section4__card {
                         width:25%;
                         padding: 90px 50px;
-                        .about__card--title {
+                        .about-section4__name {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 150px;
                             border:3px solid purple;
                             background-color: purple;
                             color:map-get($color, whi);
@@ -120,30 +124,31 @@ body {
                             font-family: $font-family;
                             font-weight: map-get($font-weight,medium);
 
-                            h2 {
+                            .about-section4__title {
                                 font-size: map-get($font-size--title, max);
                             }
                         }
-                        .about__card--img {
-                            img {
+                        .about-section4__background {
+                            border-radius: 10px;
+                            .about-section4__img {
                                 width: map-get($width-percent, max);
                                 height: 300px;
                             }
     
                         }
-                        .about__card--text {
+                        .about-section4__info {
                             line-height: 40px;
                             border-radius: 3px;
                             text-align: left;
                             font-family: $font-family;
                             font-weight: map-get($font-weight, min);
-                            p {
+                            .about-section4__text {
                                 font-size: map-get($font-size--text, min);
                             }
-                            span {
+                            .about-section4__span {
                                 font-size: map-get($font-size--text, min);
                                 font-weight: map-get($font-weight, medium);
-                                a {
+                                .about-section4__link {
                                     color:purple;
                                     text-decoration: none;
                                     &:hover {
@@ -156,7 +161,7 @@ body {
                 }  
             }
 
-            .about__section5{
+            .about-section5{
                 padding:90px;
                 display:map-get($display, fx);
                 width: map-get($width-percent, max);
@@ -167,25 +172,25 @@ body {
                 @extend %background-color;
                 color: map-get($color, whi);
                 box-sizing:border-box;
-                .about__title {
+                &__name {
                     line-height: 50px;
                     letter-spacing: 3px;
                     width: map-get($width-percent, medium-5);
                     margin-right:120px;
                     
-                    h2 {
+                    .about-section5__title {
                         font-size: map-get($font-size--title, max);
                         font-family: $font-family;
-                        font-weight: map-get($font-weight, max);
-                        a {
-                            color:map-get($color, whi);
+                        font-weight: map-get($font-weight, medium);
+                        .about-section5__link {
+                            color:black;
                             text-decoration: none;
                         }
                     }
                 }
-                .about__image {
+                &__background {
                     width:map-get($width-percent, medium-5);
-                    img {
+                    .about-section5__img {
                         width: 600px;
                         max-width: map-get($width-percent, max);
                         @extend %border;   
@@ -195,5 +200,5 @@ body {
         }
         
     }
-    
+   
 }
