@@ -2,7 +2,7 @@
 @import '../variables/_variables';
 
 body {
-    #content {
+    .content {
 
         //--------------------------------------------Section Home---------------------------------------------//
 
@@ -14,23 +14,24 @@ body {
             justify-content: map-get($paramether, cen);
             padding: 90px 0px;
             width:map-get($width-percent, max);
-            .characters__presentation {
+            &__presentation {
                 text-align: map-get($paramether, cen);
                 margin:20px;
-                a {
+                .characters__link {
                     opacity:0.5;
                     text-decoration: none;
                     color:map-get($color, whi);
                     transition: ease-out 0.2s;
                     display:block;
-                    img {
+                    font-size: map-get($font-size--px, max);
+                    .characters__img {
                         width: 300px;
                         border-radius: 50px;
                         @extend %border;
                         opacity: 0.5;
                         max-width: map-get($width-percent, max);
                     }
-                    h2 {
+                    .characters__title {
                         font-size: map-get($font-size--text, medium);
                         color:map-get($color, whi);
                         font-weight: map-get($font-weight, medium);
@@ -40,15 +41,14 @@ body {
                     &:hover {
                         opacity:1;
                         transform:scale(1.1);
-                        img {
+                        .characters__img {
                             opacity:1;   
                         }
-                        h2 {
+                        .characters__title {
                             opacity:1;
                         }   
                     }
-                }
-                
+                }    
             }
         }
     }

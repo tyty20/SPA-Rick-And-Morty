@@ -12,4 +12,4 @@ const getData = async (id) => {
     }
 }
 
-export {getData}
+export default getData;

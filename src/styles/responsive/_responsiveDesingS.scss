@@ -11,41 +11,53 @@
             background-color: #CB06A9;
             border-radius: 5px;
         }
-        #content {
-            .content__presentation {
-                height: map-get($paramether, mg-cen);
+        .content {
+            &__presentation {
+                height: 100vh;
                 flex-direction: map-get($paramether, fx-col);
                 box-sizing:border-box;
-                padding:90px 20px;
-                .content__presentation--img {
+                padding:60px 20px;
+                .content__background{
                     width:map-get($width-percent, max);
                     align-items: map-get($paramether, mg-cen);
                     padding:$padding-min;
                     box-sizing:border-box;
                     margin:$margin-min;
+                    .content__img {
+                        width: 80%;
+                    }
                 }
-                .content__presentation--text {
+                .content__info{
                     width:map-get($width-percent, max);
                     padding:$padding-min;
                     margin:$margin-min;
-                    h2 {
+                    font-size: map-get($font-size--px, min);
+                    .content__title {
+                        line-height: 20px;
                         font-size:map-get($font-size--title, min);
                     }
-                    p{
+                    .content__text{  
+                        line-height: 18px;
                         font-size: map-get($font-size--text, min);
                     }
-                }
-                .links {
-                    a {
-                        font-size: map-get($font-size--text, min);
+                    .content__social-media {
+                        font-size: map-get($font-size--px, min);
+                        .content__link{
+                            font-size: map-get($font-size--text, medium);
+                        }
                     }
                 }
+                
             }
             .characters {
-                .characters__presentation {
+                &__presentation {
                     padding:0px 20px;
-                    a {
-                        h2 {
+                    .characters__link {
+                        font-size: map-get($font-size--px, min);
+                        .characters__img {
+                            width: 80%;
+                        }
+                        .characters__title {
                             font-size: map-get($font-size--text, medium);
                         }
                     }
@@ -53,141 +65,168 @@
             }
             .character {
                 flex-direction: map-get($paramether, fx-col);
-                padding: 90px 40px;
-                height: map-get($paramether, mg-cen);
+                padding: 90px 20px;
                 box-sizing:border-box;
-                .character__presentation {
+                &__presentation {
                     width: map-get($width-percent, max);
-                    h2 {
+                    font-size: map-get($font-size--px, min+1);
+                    .character__img {
+                        width: 60%;
+                    }
+                    .character__title {
                         font-size:map-get($font-size--title, min);
                     }
 
                 }
-                .character__description {
+                &__description {
                     width:map-get($width-percent, max);
-                    h3 {
+                    text-align: center;
+                    font-size: map-get($font-size--px, min);
+                    .character__text {
                         font-size: map-get($font-size--text, min)
                     }
                 }
             }
             .about {
-                .about__section1 {
+                .about-section1 {
                     flex-direction: map-get($paramether, fx-col);
-                    padding:90px 20px;
-                    .about__title {
+                    padding:60px 20px;
+                    &__name {
                         width:map-get($width-percent, max);
                         text-align: map-get($paramether, cen);
                         padding:$padding-min;
-                        h2 {
+                        font-size:map-get($font-size--px, min);
+                        .about-section1__title {
                             font-size: map-get($font-size--title, min)
                         }
                     }
-                    .about__presentation {
-                        width: map-get($width-percent, max);
+                    &__presentation {
+                        width: map-get($width-percent, medium-8);
                         box-sizing:border-box;
-                        figure {
+                        .about-section1__figure {
                             width: map-get($width-percent, max);
-                            img {
+                            .about-section1__img {
                                 height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
                 }
-                .about__section2 {
+                .about-section2 {
+                    padding:90px 0px;
                     flex-direction: map-get($paramether, fx-col);
-                    .about__decoration1 {
+                    &__decoration1 {
                         width:map-get($width-percent, max);
-                        img {
+                        .about-section2__img {
                             width:map-get($width-percent, medium-6);
                             margin:map-get($paramether, mg-cen);
                         }
                     }
-                    .about__presentation {
+                    &__presentation {
                         width: map-get($width-percent, max);
                         margin:60px 0px;
-                        .about__presentation--text {
+                        .about-section2__info {
                             width: map-get($width-percent, medium-8);
-                            p {
+                            font-size: map-get($font-size--px, min);
+                            .about-section2__text {
+                                line-height: 25px;
                                 font-size:map-get($font-size--text, min)
                             }
                         }
                     }
-                    .about__decoration2 {
+                    &__decoration2 {
                         width:map-get($width-percent, max);
-                        img {
+                        .about-section2__img {
                             width:map-get($width-percent, medium-6);
                             margin:map-get($paramether, mg-cen);
                         }
                     }
                 }
-                .about__section3 {
+                .about-section3 {
                     flex-direction: column-reverse;
-                    padding:90px 20px;
-                    .about__presentation {
-                        width:map-get($width-percent, max);
-                        figure {
+                    padding:60px 20px;
+                    &__presentation {
+                        width:map-get($width-percent, medium-8);
+                        .about-section3__figure {
                             width: map-get($width-percent, max);
-                            img {
+                            .about-section3__img {
                                 height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
-                    .about__title {
+                    &__name {
                         width:map-get($width-percent, max);
                         padding:0px;
-                        h2 {
+                        font-size: map-get($font-size--px, min);
+                        .about-section3__title {
                             font-size: map-get($font-size--title, min)
                         }
                     }
                 }
-                .about__section4 {
+                .about-section4 {
                     flex-direction: map-get($paramether, fx-col);
                     padding:90px 0px;
-                    .about__cards {
-                        .about__card {
+                    &__cards {
+                        .about-section4__card {
                             width:map-get($width-percent, max);
                             padding:40px 20px;
-                            .about__card--title {
-                                h2 {
+                            .about-section4__name {
+                                height: 50px;
+                                font-size: map-get($font-size--px, min);
+                                .about-section4__title {
                                     font-size:map-get($font-size--title, min);
                                 }
                             }
-                            .about__card--text {
-                                p {
-                                    font-size:map-get($font-size--text, min);
+                            .about-section4__background {
+                                border-radius: 10px;
+                                .about-section4__img {
+                                    height: 200px;
                                 }
-                                span {
-                                    font-size: map-get($font-size--text, min);
+                            }
+                            .about-section4__info{
+                                font-size: map-get($font-size--px, min);
+                                .about-section4__text {
+                                    line-height: 25px;
+                                    font-size:map-get($font-size--text, extra-min);
+                                }
+                                .about-section4__span {
+                                    font-size: map-get($font-size--text, extra-min);
                                 }
                             }
                         }
                     }
                 }
-                .about__section5 {
+                .about-section5 {
                     flex-direction: column-reverse;
                     padding:90px 20px;
-                    .about__title {
+                    &__name {
                         width:map-get($width-percent,max);
                         margin-right: map-get($paramether, mg-cen);
-                        h2 {
-                            font-size: map-get($font-size--text, medium);
+                        font-size: map-get($font-size--px, min);
+                        .about-section5__title {
+                            line-height: 25px;
+                            font-size: map-get($font-size--text, max);
                         }
                     }
-                    .about__image {
+                    &__background {
                         width:map-get($width-percent,max);
+                        .about-section5__img {
+                            width:80%;
+                        }
                     }
                 }
             }
             .error404 {
-                .error404__presentation {
-                    h2 {
+                &__presentation {
+                    font-size: map-get($font-size--px, min);
+                    .error404__title {
                         font-size:map-get($font-size--title, min);
                     }
                 }
-                .error404__text {
-                    p {
+                &__info {
+                    font-size: map-get($font-size--px, min);
+                    .error404__text {
                         font-size:map-get($font-size--text, min);
                     }
                 }
@@ -201,41 +240,52 @@
 
 @include phone-max{
     body {
-        #content {
-            .content__presentation {
-                height: map-get($paramether, mg-cen);
+        .content {
+            &__presentation {
+                height: 100vh;
                 flex-direction: map-get($paramether, fx-col);
                 box-sizing:border-box;
-                padding:90px 40px;
-                .content__presentation--img {
+                padding:60px 20px;
+                .content__background {
                     width:map-get($width-percent, max);
                     align-items: map-get($paramether, mg-cen);
                     padding:$padding-min;
                     box-sizing:border-box;
                     margin:$margin-min;
+                    .content__img {
+                        width: 80%;
+                    }
                 }
-                .content__presentation--text {
+                .content__info {
                     width:map-get($width-percent, max);
                     padding:$padding-min;
                     margin:$margin-min;
-                    h2 {
+                    font-size: map-get($font-size--px, min);
+                    .content__title {
+                        line-height: 20px;
                         font-size:map-get($font-size--title, min);
                     }
-                    p{
+                    .content__text{  
+                        line-height: 18px;
                         font-size:map-get($font-size--text, min);
                     }
-                }
-                .links {
-                    a {
-                        font-size:map-get($font-size--text, min);
+                    .content__social-media {
+                        font-size: map-get($font-size--px, min);
+                        .content__link{
+                            font-size: map-get($font-size--text, medium);
+                        }
                     }
-                }
+                }   
             }
             .characters {
-                .characters__presentation {
+                &__presentation {
                     padding:0px 20px;
-                    a {
-                        h2 {
+                    .characters__link {
+                        font-size: map-get($font-size--px, min+2);
+                        .characters__img {
+                            width: 80%;
+                        }
+                        .characters__title {
                             font-size: map-get($font-size--text, medium);
                         }
                     }
@@ -243,142 +293,167 @@
             }
             .character {
                 flex-direction: map-get($paramether, fx-col);
-                padding: 90px 60px;
-                height: map-get($paramether, mg-cen);
+                padding: 90px 20px;
                 box-sizing:border-box;
-                .character__presentation {
+                &__presentation {
                     width: map-get($width-percent, max);
-                    h2 {
+                    font-size: map-get($font-size--px, min+2);
+                    .character__img {
+                        width: 60%;
+                    }
+                    .character__title {
                         font-size: map-get($font-size--title, min);
                     }
 
                 }
-                .character__description {
+                &__description {
                     width:map-get($width-percent, max);
                     text-align: map-get($paramether, cen);
-                    h3 {
-                        font-size:map-get($font-size--text, min);
+                    font-size: map-get($font-size--px, min);
+                    .character__text {
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
             }
             .about {
-                .about__section1 {
+                .about-section1 {
                     flex-direction: map-get($paramether, fx-col);
-                    padding:90px 40px;
-                    .about__title {
+                    padding:60px 20px;
+                    &__name {
                         width:map-get($width-percent, max);
                         text-align:map-get($paramether, cen);
                         padding:$padding-min;
-                        h2 {
+                        font-size: map-get($font-size--px, min);
+                        .about-section1__title{
                             font-size:map-get($font-size--title, min);
                         }
                     }
-                    .about__presentation {
-                        width: map-get($width-percent, max);
+                    &__presentation {
+                        width:map-get($width-percent, medium-7);
                         box-sizing:border-box;
-                        figure {
+                        .about-section1__figure {
                             width: map-get($width-percent, max);
-                            img {
+                            .about-section1__img {
                                 height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
                 }
-                .about__section2 {
+                .about-section2 {
+                    padding:90px 0px;
                     flex-direction: map-get($paramether, fx-col);
-                    .about__decoration1 {
+                    &__decoration1 {
                         width:map-get($width-percent, max);
-                        img {
+                        .about-section2__img {
                             margin:map-get($paramether, mg-cen);
-                            width:map-get($width-percent, medium-7);
+                            width:map-get($width-percent, medium-6);
                         }
                     }
-                    .about__presentation {
+                    &__presentation {
                         width: map-get($width-percent, max);
                         margin:60px 0px;
-                        .about__presentation--text {
+                        .about-section2__info {
                             width: map-get($width-percent,medium-8);
-                            p {
-                                font-size:map-get($font-size--text, min);
+                            font-size: map-get($font-size--px, min);
+                            .about-section2__text {
+                                line-height: 25px;
+                                font-size:map-get($font-size--text, min)
                             }
                         }
                     }
-                    .about__decoration2 {
+                    &__decoration2 {
                         width:map-get($width-percent, max);
-                        img {
+                        .about-section2__img {
                             margin:map-get($paramether, mg-cen);
-                            width:map-get($width-percent,medium-7);
+                            width:map-get($width-percent,medium-6);
                         }
                     }
                 }
-                .about__section3 {
+                .about-section3 {
                     flex-direction: column-reverse;
-                    padding:90px 40px;
-                    .about__presentation {
-                        width:map-get($width-percent, max);
-                        figure {
+                    padding:60px 20px;
+                    &__presentation {
+                        width:map-get($width-percent, medium-7);
+                        .about-section3__figure {
                             width:map-get($width-percent, max);
-                            img {
+                            .about-section3__img {
                                 height: 80%;
                                 width: map-get($width-percent, max);
                             }
                         }
                     }
-                    .about__title {
+                    &__name {
                         width:map-get($width-percent, max);
                         padding:0px;
-                        h2 {
+                        font-size:map-get($font-size--px, min);
+                        .about-section3__title {
                             font-size:map-get($font-size--title, min);
                         }
                     }
                 }
-                .about__section4 {
+                .about-section4 {
                     flex-direction: map-get($paramether, fx-col);
                     padding:90px 0px;
-                    .about__cards {
-                        .about__card {
+                    &__cards {
+                        .about-section4__card {
                             width:map-get($width-percent, max);
                             padding:60px 40px;
-                            .about__card--title {
-                                h2 {
+                            .about-section4__name {
+                                height: 50px;
+                                font-size:map-get($font-size--px, min);
+                                .about-section4__title{
                                     font-size: map-get($font-size--title, min);
                                 }
                             }
-                            .about__card--text {
-                                p {
-                                    font-size: map-get($font-size--text, min);
+                            .about-section4__background {
+                                .about-section4__img {
+                                    height: 200px;
                                 }
-                                span {
-                                    font-size: map-get($font-size--text, min);
+                            }
+                            .about-section4__info {
+                                font-size:map-get($font-size--px, min);
+                                .about-section4__text {
+                                    line-height: 25px;
+                                    font-size: map-get($font-size--text, extra-min);
+                                }
+                                .about-section4__span {
+                                    font-size: map-get($font-size--text, extra-min);
                                 }
                             }
                         }
                     }
                 }
-                .about__section5 {
+                .about-section5 {
                     flex-direction: column-reverse;
                     padding:90px 40px;
-                    .about__title {
+                    &__name {
                         width:map-get($width-percent, max);
                         margin-right: map-get($paramether, mg-cen);
-                        h2 {
+                        font-size: map-get($font-size--px, min);
+                        .about-section5__title{
+                            line-height: 25px;
                             font-size: map-get($font-size--text, medium);
                         }
                     }
-                    .about__image {
+                    &__background {
                         width:map-get($width-percent,max);
+                        .about-section5__img {
+                            width:80%;
+                        }
                     }
                 }
             }
             .error404 {
-                .error404__presentation {
-                    h2 {
+                &__presentation {
+                    font-size: map-get($font-size--px, min);
+                    .error404__title {
                         font-size: map-get($font-size--title, min);
                     }
                 }
-                .error404__text {
-                    p {
+                &__info {
+                    font-size: map-get($font-size--px, min);
+                    .error404__text {
                         font-size: map-get($font-size--text, min);
                     }
                 }

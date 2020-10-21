@@ -2,7 +2,7 @@
 @import '../variables/_variables';
 
 body {
-    #content {
+    .content {
         //--------------------------------------------Section Character---------------------------------------------//
 
         .character {
@@ -16,31 +16,31 @@ body {
             box-sizing:border-box;
             height: 100vh;
             width:map-get($width-percent, max);
-            .character__presentation {
+            &__presentation {
                 width:map-get($width-percent, medium-5);
-                img {
+                .character__img {
                     width: 350px;
                     border-radius: 50px;
                     @extend %border;
                     max-width: map-get($width-percent, max);
                 }
-                h2 {
+                .character__title {
                     font-family: $font-family;
                     font-size: map-get($font-size--title, medium);
                     color:map-get($color, whi);
                     font-weight: map-get($font-weight, medium);
                 }
             }
-            .character__description {
+            &__description {
                 box-sizing:border-box;
                 color:map-get($color, whi);
                 font-size: map-get($font-size--text, min);
                 text-align: left;
                 width:map-get($width-percent, medium-5);
-                h3 {
+                .character__text{
                     font-family: $font-family;
                     font-weight:600;
-                    span {
+                    .character__span {
                         color:map-get($color, whi); 
                         font-family: $font-family;
                         font-weight: map-get($font-weight, min);
