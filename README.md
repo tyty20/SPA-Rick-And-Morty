@@ -20,7 +20,7 @@
  
  </br>
  
- Link del proyecto: <a target="_blank" href="https://julian-carelli.github.io/SPA-Rick-And-Morty/">SPA-Rick-And-Morty</a>
+ Link del proyecto: <a target="_blank" href="https://julian-carelli.github.io/SPA-Rick-And-Morty/#/">SPA-Rick-And-Morty</a>
  </br>
  Link de la API de Rick And Morty: <a target="_blank" href="https://rickandmortyapi.com/api/character">Characters</a>
   
