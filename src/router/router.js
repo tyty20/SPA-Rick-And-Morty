@@ -1,16 +1,24 @@
 import {pages} from '../views/index'
+
 import getUrl from '../utils/getUrl'
 
-const content= document.getElementById('content')
+import Header from '../template/Header'
+
+
+const content= null || document.getElementById('content')
+const header = null || document.getElementById('header')
 
 const router = async (routes) => {
-    const URL = getUrl();
-    content.innerHTML = '';
+
+    const URL = await getUrl();
+
+    header.innerHTML = await Header()
+    
     switch(routes){
-        case '#/inicio': {
+        case '#/': {
             return content.innerHTML = await pages.presentation()
         }
-        case '#/': {
+        case '#/characters': {
             return content.innerHTML = await pages.home()
         }
         case '#/about': {

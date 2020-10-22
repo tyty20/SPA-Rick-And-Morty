@@ -1,9 +1,10 @@
 language: node_js
+node_js:
+  - "12"
 cache:
   directories:
-    - ~/.npm
-node_js:
-  - '12'
+    - node_modules
+    
 git:
   depth: 3
 
@@ -13,11 +14,11 @@ script:
 deploy:
   provider: pages
   edge: true
-  skip_cleanup: true
-  keep_history: true
-  github-token: $GITHUB-TOKEN
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit-message: "Deploy master to gh-pages"
+  commit_message: "Deploy master to gh-pages"
   on:
     branch: master

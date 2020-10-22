@@ -38,6 +38,11 @@ import sass from './styles/views/main.scss'
 
 import responsive from './styles/responsive/_mainResponsive.scss'
 
+
+//Event for loading page
+
+window.addEventListener('load', router(window.location.hash))
+
 //Event for navegation to routes
 
 window.addEventListener('hashchange', () => {

@@ -108,7 +108,7 @@ body {
                         color: #a4508b;
                         margin-right: 20px;
                         &:hover {
-                            animation: textDecoration 8s ease;
+                            opacity:0.8;
                         }
                         .content__icon{
                             font-size: map-get($font-size--text, max);

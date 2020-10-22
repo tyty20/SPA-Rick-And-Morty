@@ -55,7 +55,7 @@
                     .characters__link {
                         font-size: map-get($font-size--px, min);
                         .characters__img {
-                            width: 80%;
+                            width: 60%;
                         }
                         .characters__title {
                             font-size: map-get($font-size--text, medium);
@@ -71,7 +71,7 @@
                     width: map-get($width-percent, max);
                     font-size: map-get($font-size--px, min+1);
                     .character__img {
-                        width: 60%;
+                        width: 45%;
                     }
                     .character__title {
                         font-size:map-get($font-size--title, min);
@@ -283,7 +283,7 @@
                     .characters__link {
                         font-size: map-get($font-size--px, min+2);
                         .characters__img {
-                            width: 80%;
+                            width: 60%;
                         }
                         .characters__title {
                             font-size: map-get($font-size--text, medium);
@@ -299,7 +299,7 @@
                     width: map-get($width-percent, max);
                     font-size: map-get($font-size--px, min+2);
                     .character__img {
-                        width: 60%;
+                        width: 40%;
                     }
                     .character__title {
                         font-size: map-get($font-size--title, min);
